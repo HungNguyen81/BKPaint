@@ -631,7 +631,7 @@ public class BK_paint_frame extends JFrame {
                         drawing.graphic2d.dispose();                        // HỦY ĐỐI TƯỢNG GRAPHIC KHI EXIT
                         System.exit(0);
                     } else if (n == JOptionPane.OK_OPTION){
-                        if(new SaveImage().SaveImg(drawing.image)) {
+                        if(new OpenAndSaveImage().SaveImg(drawing.image)) {
                             drawArea.DeleteCapFrame();
                             drawing.graphic2d.dispose();
                             System.exit(1);
@@ -681,7 +681,7 @@ public class BK_paint_frame extends JFrame {
         iOpen.addActionListener(e -> {
             drawing.isFilling = false;
             btnFill.setBackground(null);
-            OpenImage open = new OpenImage();
+            OpenAndSaveImage open = new OpenAndSaveImage();
             drawing.buffImg2 = open.OpenImg();
             drawArea.Open(drawing.buffImg2);
             scale = 0;
@@ -690,7 +690,7 @@ public class BK_paint_frame extends JFrame {
             drawing.isFilling = false;
             btnFill.setBackground(null);
             drawing.isEraser = false;
-            SaveImage save = new SaveImage();
+            OpenAndSaveImage save = new OpenAndSaveImage();
             isSaved = save.SaveImg(drawing.image);
         });
         iUndo.addActionListener(e -> drawArea.Undo(true));
