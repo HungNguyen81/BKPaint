@@ -49,6 +49,7 @@ public class TextTool extends Component {
         textFontList = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
         textStyleList = new String[]{"Plain", "Bold", "Italic"};
 
+
         textField = new JTextField();                                                                               // initialize panel's components
         sizeComboBox = new JComboBox<>(textSizeList);
         fontComboBox = new JComboBox<>(textFontList);
@@ -58,7 +59,6 @@ public class TextTool extends Component {
         sizeComboBox.setSelectedItem(getTextSize());
         fontComboBox.setSelectedItem(getTextFont());
         styleComboBox.setSelectedItem(getTextStyle());
-
 
         textField.setPreferredSize(new Dimension(448, 64));
         textField.setFont(new Font(getTextFont(), getTextStyle(), getTextSize()));
@@ -102,6 +102,7 @@ public class TextTool extends Component {
                 }
             }
         });
+
 
         JPanel subDialogPanel1 = new JPanel();                                                  // initialize panel (containing sub-panels)
         subDialogPanel1.add(new JLabel("Size:  "));
@@ -147,13 +148,13 @@ public class TextTool extends Component {
         dialogPanel.add(Box.createVerticalStrut(16), gbc); // a spacer
 
 
-        setTextContent("");                         //initialize main variables
+        setTextContent("");                         // initialize main variables
         setTextSize(20);
         setTextFont("Arial");
         setTextStyle(Font.PLAIN);
 
 
-        tempTextSize = Integer.parseInt((Objects.requireNonNull(sizeComboBox.getSelectedItem())).toString());       //initialize temporary variables (has to be in this order)
+        tempTextSize = Integer.parseInt((Objects.requireNonNull(sizeComboBox.getSelectedItem())).toString());       // initialize temporary variables (has to be in this order)
         tempTextFont = Objects.requireNonNull(fontComboBox.getSelectedItem()).toString();
         tempTextStyle = styleComboBox.getSelectedIndex();
 
