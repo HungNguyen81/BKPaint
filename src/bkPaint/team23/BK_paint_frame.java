@@ -418,7 +418,7 @@ public class BK_paint_frame extends JFrame {
                 }
             }
             if(drawing.isText) {
-                TextTool.textSize = drawing.penSize;
+                TextTool.setTextSize(drawing.penSize);
                 btnText.setBackground(Color.red);
             }
         });
