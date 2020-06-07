@@ -291,7 +291,8 @@ public class TextTool extends Component {
 
     private static class fontComboBoxRenderer extends BasicComboBoxRenderer {
         @Override
-        public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+        public Component getListCellRendererComponent
+                (JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
             super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
             setFont(new Font((String) value, Font.PLAIN, 14));
             return this;
@@ -302,7 +303,8 @@ public class TextTool extends Component {
 
     private static class styleComboBoxRenderer extends BasicComboBoxRenderer {
         @Override
-        public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+        public Component getListCellRendererComponent
+                (JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
             super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
             setFont(new Font("Arial", find(textStyleList, value), 14));
             return this;

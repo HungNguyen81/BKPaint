@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/DemoJMenu.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/resizeImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/resizeImage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,22 +117,22 @@
       <screen x="0" y="0" width="1273" height="768" />
     </state>
     <state x="120" y="59" key="DiffContextDialog/0.0.1273.768@0.0.1273.768" timestamp="1591371373319" />
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591512101001">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591512283025">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591512101001" />
-    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591512101001">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591512283025" />
+    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591512283025">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591512101001" />
-    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591512101001">
+    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591512283025" />
+    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591512283025">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591512101001" />
-    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591512101001">
+    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591512283025" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591512283025">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591512101001" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591512283025" />
     <state x="137" y="26" key="SettingsEditor" timestamp="1591510627409">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
