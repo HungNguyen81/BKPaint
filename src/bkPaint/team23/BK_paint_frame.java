@@ -50,6 +50,7 @@ public class BK_paint_frame extends JFrame {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     drawing.isEraser = false;
+                    btnEraser.setBackground(null);
                     if (e.getSource() == btnBlack) {
                         drawing.ChosenColor = "0x000000";
                         drawArea.Draw();
@@ -276,6 +277,7 @@ public class BK_paint_frame extends JFrame {
             drawing.isFilling = false;
             btnFill.setBackground(null);
             drawing.isEraser = false;
+            btnEraser.setBackground(null);
             OpenAndSaveImage save = new OpenAndSaveImage();
             isSaved = save.SaveImg(drawing.image);
         });
@@ -319,6 +321,7 @@ public class BK_paint_frame extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 drawing.isFilling = false;
                 drawing.isEraser = false;
+                btnEraser.setBackground(null);
                 drawing.isText = false;
                 btnText.setBackground(null);
                 isSaved = true;             // ảnh trống -> không cần save
@@ -371,6 +374,7 @@ public class BK_paint_frame extends JFrame {
                 drawing.isText = false;
                 drawing.isFilling = false;
                 drawing.isEraser = false;
+                btnEraser.setBackground(null);
                 drawing.isShape = !(drawing.isShape);
                 drawingShape.typeOfShape = drawingShape.RECT;
 
@@ -378,6 +382,7 @@ public class BK_paint_frame extends JFrame {
                 drawing.isText = false;
                 drawing.isFilling = false;
                 drawing.isEraser = false;
+                btnEraser.setBackground(null);
                 drawing.isShape = !(drawing.isShape);
                 drawingShape.typeOfShape = drawingShape.OVAL;
 
@@ -385,6 +390,7 @@ public class BK_paint_frame extends JFrame {
                 drawing.isText = false;
                 drawing.isFilling = false;
                 drawing.isEraser = false;
+                btnEraser.setBackground(null);
                 drawing.isShape = !(drawing.isShape);
                 drawingShape.typeOfShape = drawingShape.LINE;
 
@@ -450,6 +456,7 @@ public class BK_paint_frame extends JFrame {
             drawing.isFilling = false;
             btnFill.setBackground(null);
             drawing.isEraser = false;
+            btnEraser.setBackground(null);
             if(!drawing.isText){
                 TextTool.showLastDialog(drawing.graphic2d);
                 drawing.isText = true;
@@ -468,6 +475,7 @@ public class BK_paint_frame extends JFrame {
                                                             // FILL button -----------------------------------
         btnFill.addActionListener(e -> {
             drawing.isEraser = false;
+            btnEraser.setBackground(null);
             drawing.isShape = false;
             if(drawing.isFilling){
                 drawing.isFilling = false;
@@ -492,10 +500,12 @@ public class BK_paint_frame extends JFrame {
         btnEraser.setIcon(iconEraser);
         btnEraser.setMargin(new Insets(-1, -1,-1,-1));
         btnEraser.addActionListener(e -> {
-            drawing.isEraser = false;
+//            drawing.isEraser = false;
             drawing.isFilling = false;
             btnFill.setBackground(null);
-            drawing.isEraser = true;
+            drawing.isEraser = !drawing.isEraser;
+            if(drawing.isEraser) btnEraser.setBackground(Color.ORANGE);
+            else btnEraser.setBackground(null);
             drawing.isText = false;
             btnText.setBackground(null);
             drawArea.Eraser();
@@ -552,6 +562,7 @@ public class BK_paint_frame extends JFrame {
         btnEditColor.addActionListener(e -> {
             drawArea.ColorChooser(ColorChooser.EditColor());
             drawing.isEraser = false;
+            btnEraser.setBackground(null);
         });
         controlPanel.add(btnEditColor);
         btnEditColor.setMargin(new Insets(-1, -1,-1,-1));
@@ -687,9 +698,10 @@ public class BK_paint_frame extends JFrame {
             scale = 0;
         });
         iSave.addActionListener(e -> {
-            drawing.isFilling = false;
-            btnFill.setBackground(null);
-            drawing.isEraser = false;
+//            drawing.isFilling = false;
+//            btnFill.setBackground(null);
+//            drawing.isEraser = false;
+//            btnEraser.setBackground(null);
             OpenAndSaveImage save = new OpenAndSaveImage();
             isSaved = save.SaveImg(drawing.image);
         });

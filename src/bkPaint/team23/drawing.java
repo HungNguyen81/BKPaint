@@ -61,7 +61,6 @@ public class drawing extends JComponent {
         isShape = false;
         isColorChooser = false; // isColorChooser = true, lần chọn màu gần nhất là bằng JColorChooser
         isRecord = false;
-
     }
 
     public drawing() {          //constructor
