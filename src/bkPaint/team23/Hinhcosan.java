@@ -8,22 +8,24 @@ import java.io.File;
 import java.awt.event.*;
 
 import static bkPaint.team23.BK_paint_frame.isSaved;
+import static bkPaint.team23.BK_paint_frame.drawArea;
 
-public class Hinhcosan extends  BK_paint_frame {
-//    String Dir;
-    public JComboBox createCB(String Dir){
+public class Hinhcosan {
+    String Dir;
+    public JComboBox createCB(){
         String[] Hinhcosan = {"con thỏ","con mèo","con chó","con gấu","con ong","con bướm","máy bay","xe buýt","ốc sên",
                 "bánh sinh nhật","bông hoa","quả táo","tàu ngầm","tàu thủy","tàu hỏa"};
         JComboBox drowDown = new JComboBox(Hinhcosan);
-        controlPanel.add(drowDown);
+//        controlPanel.add(drowDown);
 
         drowDown.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                Dir = System.getProperty("user.dir");
+                Dir = System.getProperty("user.dir");
                 if (drowDown.getSelectedIndex() == 0){
                     if(!isSaved) comfirmSave();
                     File iFile = new File(Dir + "\\src\\hinhcosan\\tho.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -37,6 +39,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\meo.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -50,6 +53,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\cho.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -63,6 +67,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\gau.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -76,6 +81,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\ong.png");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -89,6 +95,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\buom.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -102,6 +109,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\bay.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -115,6 +123,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\bus.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -128,6 +137,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\oc.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -141,6 +151,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\banh.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -154,6 +165,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\hoa.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -167,6 +179,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\tao.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -180,6 +193,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\ngam.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -193,6 +207,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\ship.gif");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -206,6 +221,7 @@ public class Hinhcosan extends  BK_paint_frame {
                         comfirmSave();
                     }
                     File iFile = new File(Dir + "\\src\\hinhcosan\\train.jpg");
+                    isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
@@ -218,6 +234,21 @@ public class Hinhcosan extends  BK_paint_frame {
             }
         });
         return drowDown;
+    }
+    void comfirmSave(){
+        Icon icon = new ImageIcon(getClass().getResource("image/logo2.png"));
+        int n = JOptionPane.showConfirmDialog(null,
+                "Do you want to SAVE ?",
+                "Save?", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE, icon);
+
+        if(n == JOptionPane.OK_OPTION){
+            try{
+                new OpenAndSaveImage().SaveImg(drawing.image);
+                isSaved = true;
+            } catch (Exception e){
+                JOptionPane.showMessageDialog(null, "ERROR");
+            }
+        }
     }
 
 }

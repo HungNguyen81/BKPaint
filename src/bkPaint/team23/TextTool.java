@@ -3,7 +3,6 @@ package bkPaint.team23;
 import java.awt.*;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
-import java.awt.event.MouseEvent;
 import java.util.Objects;
 
 import javax.swing.*;
@@ -14,66 +13,176 @@ import javax.swing.plaf.basic.BasicComboBoxRenderer;
  *
  */
 
-public class TextTool extends JComponent {
-    public static int textSizeIndex = 0, textFontIndex = 0;
-    public static String textContent = "";
-    private static final Integer[] textSizeList = {4,8,12,16,20,24,28,36,48,72};
-    private static final String[] textFontList
-            = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
-    public static int textSize = 20;
-    private static String textFont = "Arial";
-    //-----------------------------------------------------------------
-    public static JComboBox<Integer> sizeComboBox;
-    public static JComboBox<String> fontComboBox;
-    public static JTextField textField;
-    public static JPanel dialogPanel;
+public class TextTool extends Component {
 
-    public TextTool(){
+    private static int textSizeIndex;               // for lists used in combo boxes
+    private static int textFontIndex;
+    private static int textStyleIndex;
+    private static Integer[] textSizeList;
+    private static String[] textFontList;
+    private static String[] textStyleList;
+
+    private static String textContent;              // actual main variables
+    private static int textSize;
+    private static String textFont;
+    private static int textStyle;
+
+    private static JTextField textField;                    // components of panel in dialog
+    private static JComboBox<Integer> sizeComboBox;
+    private static JComboBox<String> fontComboBox;
+    private static JComboBox<String> styleComboBox;
+
+    private static JPanel dialogPanel;                      // panel to show in dialog
+
+    private static int tempTextSize;                // temporary variables, used for text inside dialog. They are changed when user change things like font and size in dialog.
+    private static String tempTextFont;
+    private static int tempTextStyle;
+
+
+
+    public TextTool() {
+
+        setTextSizeIndex(0);                            // initialize indexes and lists
+        setTextFontIndex(0);
+        setTextStyleIndex(0);
+        textSizeList = new Integer[]{4, 8, 12, 16, 20, 24, 28, 36, 48, 72};
+        textFontList = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+        textStyleList = new String[]{"Plain", "Bold", "Italic"};
+
+
+        textField = new JTextField();                                                                               // initialize panel's components
         sizeComboBox = new JComboBox<>(textSizeList);
         fontComboBox = new JComboBox<>(textFontList);
-        textField = new JTextField(10);
+        styleComboBox = new JComboBox<>(textStyleList);
 
-        textField.setText(textContent);
+        textField.setText(getTextContent());
+        sizeComboBox.setSelectedItem(getTextSize());
+        fontComboBox.setSelectedItem(getTextFont());
+        styleComboBox.setSelectedItem(getTextStyle());
+
+        textField.setPreferredSize(new Dimension(448, 64));
+        textField.setFont(new Font(getTextFont(), getTextStyle(), getTextSize()));
+
         sizeComboBox.setEditable(true);
-        sizeComboBox.setSelectedItem(textSize);
-        fontComboBox.setSelectedItem(textFont);
+        sizeComboBox.setPreferredSize(new Dimension(48, 24));
+        sizeComboBox.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    tempTextSize = Integer.parseInt((Objects.requireNonNull(sizeComboBox.getSelectedItem())).toString());
+                    textField.setFont(new Font(tempTextFont, tempTextStyle, tempTextSize));
+                }
+            }
+        });
+
         fontComboBox.setPreferredSize(new Dimension(256, 24));
-        fontComboBox.setFont(new Font(textFont, Font.PLAIN, 14));
+        fontComboBox.setFont(new Font(getTextFont(), Font.PLAIN, 14));
         fontComboBox.setRenderer(new fontComboBoxRenderer());
         fontComboBox.addItemListener(new ItemListener() {
             @Override
             public void itemStateChanged(ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
-                    final String fontName = Objects.requireNonNull(fontComboBox.getSelectedItem()).toString();
-                    fontComboBox.setFont(new Font(fontName, Font.PLAIN, 14));
+                    tempTextFont = Objects.requireNonNull(fontComboBox.getSelectedItem()).toString();
+                    fontComboBox.setFont(new Font(tempTextFont, Font.PLAIN, 14));
+                    textField.setFont(new Font(tempTextFont, tempTextStyle, tempTextSize));
                 }
             }
         });
 
-        dialogPanel = new JPanel();
-//        dialogPanel.setLayout(new BoxLayout(dialogPanel, BoxLayout.Y_AXIS));
-        dialogPanel.add(new JLabel("Text:"));
-        dialogPanel.add(textField);
-        dialogPanel.add(Box.createHorizontalStrut(15)); // a spacer
-        dialogPanel.add(new JLabel("Size:"));
-        dialogPanel.add(sizeComboBox);
-        dialogPanel.add(Box.createHorizontalStrut(15)); // a spacer
-        dialogPanel.add(new JLabel("Font:"));
-        dialogPanel.add(fontComboBox);
+        styleComboBox.setPreferredSize(new Dimension(64, 24));
+        styleComboBox.setFont(new Font("Arial", find(textStyleList, getTextStyle()), 14));
+        styleComboBox.setRenderer(new styleComboBoxRenderer());
+        styleComboBox.addItemListener(new ItemListener() {
+            @Override
+            public void itemStateChanged(ItemEvent e) {
+                if (e.getStateChange() == ItemEvent.SELECTED) {
+                    tempTextStyle = styleComboBox.getSelectedIndex();
+                    styleComboBox.setFont(new Font("Arial", tempTextStyle, 14));
+                    textField.setFont(new Font(tempTextFont, tempTextStyle, tempTextSize));
+                }
+            }
+        });
+
+
+        JPanel subDialogPanel1 = new JPanel();                                                  // initialize panel (containing sub-panels)
+        subDialogPanel1.add(new JLabel("Size:  "));
+        subDialogPanel1.add(sizeComboBox);
+        subDialogPanel1.add(Box.createHorizontalStrut(16));
+        subDialogPanel1.add(new JLabel("Font:  "));
+        subDialogPanel1.add(fontComboBox);
+
+        JPanel subDialogPanel2 = new JPanel();
+        subDialogPanel2.add(new JLabel("Style  "));
+        subDialogPanel2.add(styleComboBox);
+
+        dialogPanel = new JPanel(new GridBagLayout());
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.anchor = GridBagConstraints.LINE_START;
+
+        gbc.gridx = 0;
+        gbc.gridy = 0;
+        dialogPanel.add(new JLabel("Text:  "), gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = GridBagConstraints.RELATIVE;
+        dialogPanel.add(textField, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = GridBagConstraints.RELATIVE;
+        dialogPanel.add(Box.createVerticalStrut(16), gbc); // a spacer
+
+        gbc.gridx = 0;
+        gbc.gridy = GridBagConstraints.RELATIVE;
+        dialogPanel.add(subDialogPanel1, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = GridBagConstraints.RELATIVE;
+        dialogPanel.add(Box.createVerticalStrut(8), gbc); // a spacer
+
+        gbc.gridx = 0;
+        gbc.gridy = GridBagConstraints.RELATIVE;
+        dialogPanel.add(subDialogPanel2, gbc);
+
+        gbc.gridx = 0;
+        gbc.gridy = GridBagConstraints.RELATIVE;
+        dialogPanel.add(Box.createVerticalStrut(16), gbc); // a spacer
+
+
+        setTextContent("");                         // initialize main variables
+        setTextSize(20);
+        setTextFont("Arial");
+        setTextStyle(Font.PLAIN);
+
+
+        tempTextSize = Integer.parseInt((Objects.requireNonNull(sizeComboBox.getSelectedItem())).toString());       // initialize temporary variables (has to be in this order)
+        tempTextFont = Objects.requireNonNull(fontComboBox.getSelectedItem()).toString();
+        tempTextStyle = styleComboBox.getSelectedIndex();
+
     }
-//-----------------------------------------------------------------
-
-//    public static void showDefaultDialog() {
-//        showDialog("",0,0);
-//    }
 
 
 
-//    public static void showLastDialog(Graphics2D g) {
-//        showDialog(g, textContent, textSize, textFont);
-//    }
-    //==================================================================
+
+    public static void showDefaultDialog() {
+        showDialog("",0,0,0);
+    }
+
+
+
     public static void showLastDialog(Graphics2D g) {
+        showDialog(getTextContent(), getTextSize(), getTextFont(), getTextStyle());
+    }
+
+
+
+    public static void showDialog(String textContent, int textSize, String textFont, int textStyle) {
+
+        textField.setText(textContent);
+        sizeComboBox.setSelectedItem(textSize);
+        fontComboBox.setSelectedItem(textFont);
+        styleComboBox.setSelectedIndex(textStyle);
+
+
         int result = JOptionPane.showConfirmDialog(null,
                 dialogPanel,
                 "Text",
@@ -81,25 +190,26 @@ public class TextTool extends JComponent {
                 JOptionPane.PLAIN_MESSAGE);
 
         if (result == JOptionPane.OK_OPTION) {
-            TextTool.textContent = textField.getText();
-            TextTool.textSize           //these are used later as parameters for createTextBox()
-                    = Integer.parseInt
-                    ((Objects.requireNonNull(sizeComboBox.getSelectedItem())).toString());
-            TextTool.textFont = Objects.requireNonNull(fontComboBox.getSelectedItem()).toString();
+            TextTool.setTextContent(textField.getText());
+            TextTool.setTextSize(Integer.parseInt((Objects.requireNonNull(sizeComboBox.getSelectedItem())).toString()));
+            TextTool.setTextFont(Objects.requireNonNull(fontComboBox.getSelectedItem()).toString());
+            TextTool.setTextStyle(styleComboBox.getSelectedIndex());
+
         }
     }
-    //==================================================================
 
-//    public static void showDialog(String textContent, int textSizeIndex, int textFontIndex) {
-//        showDialog(textContent, textSizeList[textSizeIndex], textFontList[textFontIndex]);
-//    }
+
+
+    public static void showDialog(String textContent, int textSizeIndex, int textFontIndex, int textStyleIndex) {
+        showDialog(textContent, textSizeList[textSizeIndex], textFontList[textFontIndex], textStyleIndex);
+    }
 
 
 
     public static void insertText(Graphics2D g2d, int x, int y) {
-        Font textFont = new Font(TextTool.textFont, Font.PLAIN, TextTool.textSize);
+        Font textFont = new Font(TextTool.getTextFont(), TextTool.getTextStyle(), TextTool.getTextSize());
         g2d.setFont(textFont);
-        g2d.drawString(textContent, x, y);
+        g2d.drawString(getTextContent(), x, y);
     }
 
 
@@ -108,7 +218,9 @@ public class TextTool extends JComponent {
 
     }
 
-    private static<T> int find(T[] arr, T target) {        //miscellaneous method to find the index of elements in array
+
+
+    private static<T> int find(T[] arr, T target) {        // miscellaneous method to find the index of elements in array
         for (int i = 0; i < arr.length; i++)
             if (target.equals(arr[i]))
                 return i;
@@ -116,8 +228,68 @@ public class TextTool extends JComponent {
         return -1;
     }
 
-    private static class fontComboBoxRenderer extends BasicComboBoxRenderer {
+    public static String getTextContent() {                                 // getters and setters
+        return textContent;
+    }
 
+    public static void setTextContent(String textContent) {
+        TextTool.textContent = textContent;
+        textField.setText(textContent);
+    }
+
+    public static int getTextSize() {
+        return textSize;
+    }
+
+    public static void setTextSize(int textSize) {
+        TextTool.textSize = textSize;
+        sizeComboBox.setSelectedItem(textSize);
+    }
+
+    public static String getTextFont() {
+        return textFont;
+    }
+
+    public static void setTextFont(String textFont) {
+        TextTool.textFont = textFont;
+        fontComboBox.setSelectedItem(textFont);
+    }
+
+    public static int getTextStyle() {
+        return textStyle;
+    }
+
+    public static void setTextStyle(int textStyle) {
+        TextTool.textStyle = textStyle;
+        styleComboBox.setSelectedItem(textStyle);
+    }
+
+    public static int getTextSizeIndex() {
+        return textSizeIndex;
+    }
+
+    public static void setTextSizeIndex(int textSizeIndex) {
+        TextTool.textSizeIndex = textSizeIndex;
+    }
+
+    public static int getTextFontIndex() {
+        return textFontIndex;
+    }
+
+    public static void setTextFontIndex(int textFontIndex) {
+        TextTool.textFontIndex = textFontIndex;
+    }
+
+    public static int getTextStyleIndex() {
+        return textStyleIndex;
+    }
+
+    public static void setTextStyleIndex(int textStyleIndex) {
+        TextTool.textStyleIndex = textStyleIndex;
+    }
+
+
+    private static class fontComboBoxRenderer extends BasicComboBoxRenderer {
         @Override
         public Component getListCellRendererComponent
                 (JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
@@ -129,152 +301,13 @@ public class TextTool extends JComponent {
 
 
 
+    private static class styleComboBoxRenderer extends BasicComboBoxRenderer {
+        @Override
+        public Component getListCellRendererComponent
+                (JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
+            super.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+            setFont(new Font("Arial", find(textStyleList, value), 14));
+            return this;
+        }
+    }
 }
-
-
-
-
-//        JTextField textField = new JTextField(10);
-//        JComboBox<String> sizeComboBox = new JComboBox<>(textSizeList);
-//        JComboBox<String> fontComboBox = new JComboBox<>(textFontList);
-//
-//        textField.setText(textContent);
-//        sizeComboBox.setSelectedIndex(textSizeIndex);
-//        fontComboBox.setSelectedIndex(textFontIndex);
-//        fontComboBox.setPreferredSize(new Dimension(256, 24));
-//        fontComboBox.setFont(new Font(textFontList[textFontIndex], Font.PLAIN, 14));
-//        fontComboBox.setRenderer(new fontComboBoxRenderer());
-//        fontComboBox.addItemListener(new ItemListener() {
-//
-//            @Override
-//            public void itemStateChanged(ItemEvent e) {
-//                if (e.getStateChange() == ItemEvent.SELECTED) {
-//                    final String fontName = Objects.requireNonNull(fontComboBox.getSelectedItem()).toString();
-//                    fontComboBox.setFont(new Font(fontName, Font.PLAIN, 14));
-//                }
-//            }
-//        });
-//
-//        JPanel myPanel = new JPanel();
-//        myPanel.add(new JLabel("Text:"));
-//        myPanel.add(textField);
-//        myPanel.add(Box.createHorizontalStrut(15));
-//        myPanel.add(new JLabel("Size:"));
-//        myPanel.add(sizeComboBox);
-//        myPanel.add(Box.createHorizontalStrut(15)); // a spacer
-//        myPanel.add(new JLabel("Font:"));
-//        myPanel.add(fontComboBox);
-//
-//        int result = JOptionPane.showConfirmDialog(null,
-//                myPanel,
-//                "Text",
-//                JOptionPane.OK_CANCEL_OPTION,
-//                JOptionPane.PLAIN_MESSAGE);
-//
-//        if (result == JOptionPane.OK_OPTION) {
-//            TextTool.textContent = textField.getText();
-//            TextTool.textSizeIndex = sizeComboBox.getSelectedIndex();//these are used later as parameters for createTextBox()
-//            TextTool.textFontIndex = fontComboBox.getSelectedIndex();
-//
-//        }
-
-
-
-//    private static class fontComboBoxRenderer extends BasicComboBoxRenderer {
-//
-//        public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
-//            JLabel renderer = (JLabel) new DefaultListCellRenderer().getListCellRendererComponent(list, value, index, isSelected,cellHasFocus);
-//            renderer.setFont(new Font("Courier", Font.ITALIC, 14));
-//            return renderer;
-//        }
-//    }
-
-
-
-
-//Start inserting a text box onto canvas after getting user's inputs
-    //void createTextBox() {
-    //  master.frame.add(new CustomPaintComponent());
-    //}
-
-
-
-//    public static void insertText(Graphics2D g2d, int x, int y){
-//
-//
-//        // Retrieve the graphics context; this object is used to paint shapes
-//
-////            Graphics2D g2d = (Graphics2D) g;
-//
-//        /**
-//         * The coordinate system of a graphics context is such that the
-//         * origin is at the northwest corner and x-axis increases toward the
-//         * right while the y-axis increases toward the bottom.
-//         */
-//
-//        // Set the desired textFontList if different from default textFontList
-//
-//        Font textFont = new Font(textFontList[textFontIndex], Font.PLAIN, Integer.parseInt(textSizeList[textSizeIndex]));
-//
-//        g2d.setFont(textFont);
-//
-//        // Draw a string such that its base line is at x, y
-//
-//        g2d.drawString(jct.getText(), x, y);
-////
-////        FontMetrics fontMetrics = g2d.getFontMetrics();
-////
-////        // Draw a string such that the top-left corner is at x, y
-////
-////        g2d.drawString("This is another test string", x, y+fontMetrics.getAscent());
-//
-//    }
-//
-//
-//
-//    /**
-//     * To draw on the screen, it is first necessary to subclass a Component and
-//     * override its paint() method. The paint() method is automatically called
-//     * by the windowing system whenever component's area needs to be repainted.
-//     */
-////    static class CustomPaintComponent extends Component {
-////
-////        public void paint(Graphics2D g2d) {
-////
-////
-////            // Retrieve the graphics context; this object is used to paint shapes
-////
-//////            Graphics2D g2d = (Graphics2D) g;
-////
-////            /**
-////             * The coordinate system of a graphics context is such that the
-////             * origin is at the northwest corner and x-axis increases toward the
-////             * right while the y-axis increases toward the bottom.
-////             */
-////
-////            // Set the desired textFontList if different from default textFontList
-////
-////            Font textFontList = new Font("Serif", Font.PLAIN, 12);
-////
-////            g2d.setFont(textFontList);
-////
-////            // Draw a string such that its base line is at x, y
-////
-////            g2d.drawString("This is a test string", x, y);
-////
-////            FontMetrics fontMetrics = g2d.getFontMetrics();
-////
-////            // Draw a string such that the top-left corner is at x, y
-////
-////            g2d.drawString("This is another test string", x, y+fontMetrics.getAscent());
-////
-////            repaint();
-////
-////
-////
-////
-////        }
-////
-////    }
-//
-//}
