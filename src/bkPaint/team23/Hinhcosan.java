@@ -24,7 +24,7 @@ public class Hinhcosan {
                 Dir = System.getProperty("user.dir");
                 if (drowDown.getSelectedIndex() == 0){
                     if(!isSaved) comfirmSave();
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\tho.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\tho.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -38,7 +38,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\meo.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\meo.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -52,7 +52,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\cho.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\cho.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -66,7 +66,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\gau.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\gau.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -94,7 +94,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\buom.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\buom.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -102,13 +102,12 @@ public class Hinhcosan {
                     } catch (Exception exp){
                         JOptionPane.showMessageDialog(null, "ERROR!", "Warning", JOptionPane.WARNING_MESSAGE);
                     }
-
                 }
                 else if (drowDown.getSelectedIndex() == 6){
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\bay.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\bay.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -122,7 +121,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\bus.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\bus.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -136,7 +135,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\oc.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\oc.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -150,7 +149,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\banh.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\banh.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -164,7 +163,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\hoa.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\hoa.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -178,7 +177,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\tao.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\tao.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -192,7 +191,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\ngam.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\ngam.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -206,7 +205,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\ship.gif");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\ship.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);
@@ -220,7 +219,7 @@ public class Hinhcosan {
                     if(!isSaved){
                         comfirmSave();
                     }
-                    File iFile = new File(Dir + "\\src\\hinhcosan\\train.jpg");
+                    File iFile = new File(Dir + "\\src\\hinhcosan\\train.png");
                     isSaved = true;
                     try{
                         BufferedImage bi = ImageIO.read(iFile);

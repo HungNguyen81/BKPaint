@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BK_paint__DEMO__jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jcodec_0_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$fontComboBoxRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$fontComboBoxRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$styleComboBoxRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$styleComboBoxRenderer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/resizeImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/resizeImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/OpenImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/OpenImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/SaveImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/SaveImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/TextTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/TextTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/createReplayVid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/createReplayVid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawingShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawingShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/resizeImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/resizeImage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,22 +56,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591603518226">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591603681019">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591603518226" />
-    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591603518226">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
+    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591603681019">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591603518226" />
-    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591603518226">
+    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
+    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591603681019">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591603518226" />
-    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591603518226">
+    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591603681019">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591603518226" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
     <state x="333" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1591602331667">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
