@@ -3,6 +3,7 @@ package bkPaint.team23;
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.font.GraphicAttribute;
 import java.awt.image.BufferedImage;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -12,59 +13,41 @@ import java.io.File;
 
 public class drawing extends JComponent {
     public static Image image;
-    public static BufferedImage buffImg;
-    public static BufferedImage buffImg2;
+    public static BufferedImage buffImg
+            = new BufferedImage(600, 600, BufferedImage.TYPE_INT_ARGB);
+    public static BufferedImage buffImg2
+            = new BufferedImage(600, 600, BufferedImage.TYPE_INT_ARGB);
                                             // ĐƯỢC DÙNG ĐỂ BACKUP ẢNH KHI ZOOM (IN/OUT)
     public static Graphics2D graphic2d;     // ĐỐI TƯỢNG DÙNG ĐỂ VẼ
     protected static int curX, curY, oldX, oldY;
     static int fwidth, fheight;             // KÍCH THƯỚC FRAME
-    static int penSize;                     // KÍCH THƯỚC MẶC ĐỊNH CỦA BÚT VẼ
-    static int brushOption;
+    static int penSize = 10;                 // KÍCH THƯỚC MẶC ĐỊNH CỦA BÚT VẼ
+    static int brushOption = 1;
     static String sDir;                     // ĐƯỜNG DẪN ĐẾN THƯ MỤC CHỨA PROJECT
-    static String ChosenColor;              // MÀU KHỞI TẠO BAN ĐẦU
+    static String ChosenColor = "0x808080"; // MÀU KHỞI TẠO BAN ĐẦU
     static Color color;                     // Màu được chọn từ ColorChooser
-    private float[] dash4;                  // KIỂU NÉT ĐỨT
+    private float[] dash4 = {5f, 5f, 5f};   // KIỂU NÉT ĐỨT
     BasicStroke brush;
     BasicStroke pencil;
     BasicStroke dashBrush;
-    static int numFrame;     // SỐ FRAME ĐÃ LƯU TRỮ, BẮT ĐẦU TỪ 1
+    static int numFrame = 1; // SỐ FRAME ĐÃ LƯU TRỮ, BẮT ĐẦU TỪ 1
                              // all of frames will be stored in frame folder, the sub-folder
                              // which in the same folder with .jar file
 
     static int[] frameArr;         // LƯU TRỮ MẢNG CHỈ SỐ CỦA FRAME, PHỤC VỤ CHO UNDO
     static BufferedImage[] bfImg;          // LƯU TRỬ CÁC ĐỐI TƯỢNG BUFFERED-IMAGE DÙNG ĐỂ UNDO HOẶC REDO
-    static int index;           // KHỞI TẠO CHỈ SỐ FRAME = 0
-    static int MaxNumFrame;          // SỐ FRAME LỚN NHẤT CÓ THỂ TRÌNH CHIẾU
+    static int index = 0;           // KHỞI TẠO CHỈ SỐ FRAME = 0
+    static int MaxNumFrame = numFrame;          // SỐ FRAME LỚN NHẤT CÓ THỂ TRÌNH CHIẾU
 
-    public static boolean isFilling;
-    public static boolean isEraser;
-    public static boolean isText;
-    public static boolean isShape;
-    public static boolean isColorChooser; // isColorChooser = true, lần chọn màu gần nhất là bằng JColorChooser
-    public static boolean isRecord;
+    public static boolean isFilling = false;
+    public static boolean isEraser = false;
+    public static boolean isText = false;
+    public static boolean isShape = false;
+    public static boolean isColorChooser = false; // isColorChooser = true, lần chọn màu gần nhất là bằng JColorChooser
+    public static boolean isRecord = false;
     static final int MAX_UNDO = 30;        // CHO PHÉP UNDO TỐI ĐA 30 LẦN
 
-    public void Init(){
-        buffImg = new BufferedImage(600, 600, BufferedImage.TYPE_INT_ARGB);
-        buffImg2 = new BufferedImage(600, 600, BufferedImage.TYPE_INT_ARGB);
-        penSize = 10;
-        brushOption = 1;
-        ChosenColor = "0x808080";
-        dash4 = new float[]{5f, 5f, 5f};
-        numFrame = 1;
-        index = 0;
-        MaxNumFrame = numFrame;
-
-        isFilling = false;
-        isEraser = false;
-        isText = false;
-        isShape = false;
-        isColorChooser = false; // isColorChooser = true, lần chọn màu gần nhất là bằng JColorChooser
-        isRecord = false;
-    }
-
     public drawing() {          //constructor
-        Init();
         setDoubleBuffered(true);
         System.setProperty("myColor", ChosenColor);
         System.setProperty("borderColor", "0x000000");
@@ -83,20 +66,18 @@ public class drawing extends JComponent {
                 BK_paint_frame.isSaved = false;                 // ảnh chưa được lưu
                 oldX = e.getX();
                 oldY = e.getY();
-
-                bfImg[index] = copyImage(buffImg);
-                frameArr[index] = numFrame;                 // lưu lại từng frame và chỉ số
-                if (index == MAX_UNDO - 1) {                  // nếu số lượt undo đạt giới hạn
-                    for (int i = 0; i < MAX_UNDO - 1; i++) {
-                        bfImg[i] = copyImage(bfImg[i + 1]);
-                        frameArr[i] = frameArr[i + 1];
-                    }
-                } else {
-                    index++;
-                }
-
                 if(!isText) {
                     if (!isShape) {
+                        bfImg[index] = copyImage(buffImg);
+                        frameArr[index] = numFrame;                 // lưu lại từng frame và chỉ số
+                        if (index == MAX_UNDO - 1) {                  // nếu số lượt undo đạt giới hạn
+                            for (int i = 0; i < MAX_UNDO - 1; i++) {
+                                bfImg[i] = copyImage(bfImg[i + 1]);
+                                frameArr[i] = frameArr[i + 1];
+                            }
+                        } else {
+                            index++;
+                        }
                         if (!isFilling) {                           // NẾU FILL TOOL ĐANG KHÔNG BẬT
                             graphic2d.drawImage(buffImg, 0, 0, null);
                             if (brushOption == 1 && !isEraser) {
@@ -136,6 +117,16 @@ public class drawing extends JComponent {
                 else {
                     graphic2d.setPaint((isColorChooser)? color:Color.getColor("myColor"));
                     TextTool.insertText(graphic2d, e.getX(), e.getY());
+                    bfImg[index] = copyImage(buffImg);
+                    frameArr[index] = numFrame;                 // lưu lại từng frame và chỉ số
+                    if (index == MAX_UNDO - 1) {                  // nếu số lượt undo đạt giới hạn
+                        for (int i = 0; i < MAX_UNDO - 1; i++) {
+                            bfImg[i] = copyImage(bfImg[i + 1]);
+                            frameArr[i] = frameArr[i + 1];
+                        }
+                    } else {
+                        index++;
+                    }
                     repaint();
                 }
 //                image = buffImg;
@@ -157,12 +148,7 @@ public class drawing extends JComponent {
                         MaxNumFrame = Math.max(MaxNumFrame, numFrame);
                     }
                 }
-//                if(isShape){
-//                    curX = e.getX();
-//                    curY = e.getY();
-//                    drawingShape.createShape(new Point(oldX, oldY), new Point(curX, curY));
-//                    repaint();
-//                }
+
             }
         });
         addMouseListener(new MouseAdapter() {
@@ -170,13 +156,8 @@ public class drawing extends JComponent {
             public void mouseReleased(MouseEvent e) {         // -------------BẮT SỰ KIỆN NHẢ CHUỘT
                 buffImg2 = copyImage((BufferedImage) image);
                 bfImg[index] = copyImage(buffImg2);           // lưu lại frame cuối vào mảng để redo
-                if(isShape){
-                    curX = e.getX();
-                    curY = e.getY();
-                    drawingShape.createShape(new Point(oldX, oldY), new Point(curX, curY));
-                    buffImg2 = copyImage(buffImg);
-                    repaint();
-                }
+//                if(isShape) graphic2d.drawLine(oldX,oldY,curX,curY);
+                drawingShape.isPressed = false;
             }
         });
     }

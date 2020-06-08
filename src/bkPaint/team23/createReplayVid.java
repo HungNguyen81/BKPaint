@@ -11,23 +11,15 @@ import java.io.IOException;
 
 public class createReplayVid{
     static int count;
-    Image img;
+    Image img = null;
     File f;
     Image image;
-    JLabel Lb;
-    JFrame frame;
-    boolean isPlaying;
+    JLabel Lb = null;
+    JFrame frame = new JFrame("VIDEO PLAY");
+    boolean isPlaying = false;
     boolean intro;
     int introIndex;
-    static int delay;
-
-    public createReplayVid(){
-        img = null;
-        Lb = null;
-        frame = new JFrame("VIDEO PLAY");
-        isPlaying = false;
-        delay = 5;
-    }
+    static int delay = 5;
 
     public void ShowVid(String dir){
         count = 1;

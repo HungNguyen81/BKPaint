@@ -1,8 +1,14 @@
 package bkPaint.team23;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.awt.event.ActionEvent;
+import java.io.IOException;
 
 public class BK_paint_frame extends JFrame {
     private JButton btnBlack;
@@ -38,11 +44,13 @@ public class BK_paint_frame extends JFrame {
 
     private JComboBox<String> jcSize;
     private JComboBox<String> jcBrush;
+    private JComboBox<String> jcImage;
     private JLabel ratio;
 
-    private drawing drawArea;
-    public static long scale;
-    static boolean isSaved;  // Ban đầu chưa vẽ gì -> không cần save
+    drawing drawArea;
+    public static long scale = 0;
+    static boolean isSaved = true;  // Ban đầu chưa vẽ gì -> không cần save
+    JPanel controlPanel;
 
     static JButton curColor;
 
@@ -50,7 +58,9 @@ public class BK_paint_frame extends JFrame {
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     drawing.isEraser = false;
-                    btnEraser.setBackground(null);
+//                    drawing.isText = false;
+//                    drawing.isColorChooser = false;
+
                     if (e.getSource() == btnBlack) {
                         drawing.ChosenColor = "0x000000";
                         drawArea.Draw();
@@ -104,9 +114,6 @@ public class BK_paint_frame extends JFrame {
             };
 
     public BK_paint_frame(){
-        scale = 0;
-        isSaved = true;
-
         btnBlack = new JButton(" ");                // Bảng chọn màu nhanh
         btnBlack.addActionListener(actionListener);
         btnBlack.setBackground(Color.black);
@@ -206,26 +213,28 @@ public class BK_paint_frame extends JFrame {
         btnFill.setBorder(null);
 
         btnClear.setBackground(Color.red);
-        btnOpen.setBackground(null);
-        btnSave.setBackground(null);
-        btnUndo.setBackground(null);
-        btnRedo.setBackground(null);
-        btnFill.setBackground(null);
-        btnEraser.setBackground(null);
-        btnText.setBackground(null);
-        btnVid.setBackground(null);
-        btnEditColor.setBackground(null);
-        btnHelp.setBackground(null);
-        btnZoomOut.setBackground(null);
-        btnZoomIn.setBackground(null);
+        btnOpen.setBackground(Color.lightGray);
+        btnSave.setBackground(Color.lightGray);
+        btnUndo.setBackground(Color.lightGray);
+        btnRedo.setBackground(Color.lightGray);
+        btnFill.setBackground(Color.white);
+        btnEraser.setBackground(Color.lightGray);
+        btnText.setBackground(Color.lightGray);
+        btnVid.setBackground(Color.lightGray);
+        btnEditColor.setBackground(Color.lightGray);
+        btnHelp.setBackground(Color.lightGray);
+        btnZoomOut.setBackground(Color.PINK);
+        btnZoomIn.setBackground(Color.PINK);
 
         Icon iconZout = new ImageIcon(getClass().getResource("image/zout.png"));
         btnZoomOut.setIcon(iconZout);
         Icon iconZin = new ImageIcon(getClass().getResource("image/zin.png"));
         btnZoomIn.setIcon(iconZin);
+        controlPanel = new JPanel();
 
         curColor = new JButton("  ");
         curColor.setEnabled(false);
+
 
     }
     public static void main(String[] args) {
@@ -240,7 +249,7 @@ public class BK_paint_frame extends JFrame {
         drawArea = new drawing();
         container.add(drawArea, BorderLayout.CENTER);
 
-        JPanel controlPanel = new JPanel();             // Bảng điều khiển chương trình
+//        JPanel controlPanel = new JPanel();             // Bảng điều khiển chương trình
         JPanel colorPanel = new JPanel();               // Bảng chọn màu nhanh
 
         container.add(controlPanel, BorderLayout.NORTH);
@@ -260,8 +269,8 @@ public class BK_paint_frame extends JFrame {
         btnOpen.setIcon(iconOpen);
         btnOpen.addActionListener(e -> {
             drawing.isFilling = false;
-            btnFill.setBackground(null);
-            OpenAndSaveImage open = new OpenAndSaveImage();
+            btnFill.setBackground(Color.white);
+            OpenImage open = new OpenImage();
             drawing.buffImg2 = open.OpenImg();
             drawArea.Open(drawing.buffImg2);
             scale = 0;
@@ -271,14 +280,12 @@ public class BK_paint_frame extends JFrame {
         btnOpen.setMargin(new Insets(-1, -1,-1,-1));
         panel1.add(new JLabel(" "));
 
-//        container.addKeyListener(new ShiftKeyListener());
                                                              // SAVE button -----------------------------------
         btnSave.addActionListener(e -> {
             drawing.isFilling = false;
-            btnFill.setBackground(null);
+            btnFill.setBackground(Color.white);
             drawing.isEraser = false;
-            btnEraser.setBackground(null);
-            OpenAndSaveImage save = new OpenAndSaveImage();
+            SaveImage save = new SaveImage();
             isSaved = save.SaveImg(drawing.image);
         });
         btnSave.setMnemonic(KeyEvent.VK_S);
@@ -306,6 +313,7 @@ public class BK_paint_frame extends JFrame {
         btnRedo.setIcon(iconRedo);
 
         controlPanel.add(new JLabel(" "));
+        controlPanel.add(new Hinhcosan().createCB(drawing.sDir));
 //--------------------------------------------------------------------- CLEAR PANEL ------------------------
         JPanel textPanel = new JPanel();
         textPanel.setBackground(Color.lightGray);
@@ -321,9 +329,7 @@ public class BK_paint_frame extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 drawing.isFilling = false;
                 drawing.isEraser = false;
-                btnEraser.setBackground(null);
                 drawing.isText = false;
-                btnText.setBackground(null);
                 isSaved = true;             // ảnh trống -> không cần save
 
                 Icon logo = new ImageIcon(getClass().getResource("image/logo2.png"));
@@ -333,7 +339,7 @@ public class BK_paint_frame extends JFrame {
                         JOptionPane.INFORMATION_MESSAGE,logo);
                 if(!(n == JOptionPane.CANCEL_OPTION || n == JOptionPane.CLOSED_OPTION)){
                     drawArea.Clear();
-                    btnFill.setBackground(null);
+                    btnFill.setBackground(Color.white);
                     drawArea.DeleteCapFrame();
                 }
             }
@@ -369,30 +375,21 @@ public class BK_paint_frame extends JFrame {
         controlPanel.add(shapePanel);
 
         ActionListener shapeAction = e -> {
-            btnText.setBackground(null);
             if(e.getSource() == btnRect){
                 drawing.isText = false;
                 drawing.isFilling = false;
                 drawing.isEraser = false;
-                btnEraser.setBackground(null);
-                drawing.isShape = !(drawing.isShape);
-                drawingShape.typeOfShape = drawingShape.RECT;
 
             } else if (e.getSource() == btnOval){
                 drawing.isText = false;
                 drawing.isFilling = false;
                 drawing.isEraser = false;
-                btnEraser.setBackground(null);
-                drawing.isShape = !(drawing.isShape);
-                drawingShape.typeOfShape = drawingShape.OVAL;
 
             } else if (e.getSource() == btnLine){
                 drawing.isText = false;
                 drawing.isFilling = false;
                 drawing.isEraser = false;
-                btnEraser.setBackground(null);
                 drawing.isShape = !(drawing.isShape);
-                drawingShape.typeOfShape = drawingShape.LINE;
 
             }
         };
@@ -423,10 +420,7 @@ public class BK_paint_frame extends JFrame {
                     drawing.penSize = i + minVal;
                 }
             }
-            if(drawing.isText) {
-                TextTool.setTextSize(drawing.penSize);
-                btnText.setBackground(Color.red);
-            }
+            if(drawing.isText) TextTool.textSize = drawing.penSize;
         });
 
                                                             // BRUSH combo box ----------------------------
@@ -454,16 +448,13 @@ public class BK_paint_frame extends JFrame {
         btnText.setBackground(null);
         btnText.addActionListener(e -> {
             drawing.isFilling = false;
-            btnFill.setBackground(null);
+            btnFill.setBackground(Color.white);
             drawing.isEraser = false;
-            btnEraser.setBackground(null);
             if(!drawing.isText){
                 TextTool.showLastDialog(drawing.graphic2d);
                 drawing.isText = true;
-                btnText.setBackground(Color.red);
             } else {
                 drawing.isText = false;
-                btnText.setBackground(null);
             }
         });
         controlPanel.add(btnText);
@@ -475,15 +466,12 @@ public class BK_paint_frame extends JFrame {
                                                             // FILL button -----------------------------------
         btnFill.addActionListener(e -> {
             drawing.isEraser = false;
-            btnEraser.setBackground(null);
-            drawing.isShape = false;
             if(drawing.isFilling){
                 drawing.isFilling = false;
-                btnFill.setBackground(null);
+                btnFill.setBackground(Color.white);
             } else {
                 drawing.isFilling = true;
                 drawing.isText = false;
-                btnText.setBackground(null);
                 btnFill.setBackground(Color.YELLOW);
             }
         });
@@ -500,14 +488,11 @@ public class BK_paint_frame extends JFrame {
         btnEraser.setIcon(iconEraser);
         btnEraser.setMargin(new Insets(-1, -1,-1,-1));
         btnEraser.addActionListener(e -> {
-//            drawing.isEraser = false;
+            drawing.isEraser = false;
             drawing.isFilling = false;
-            btnFill.setBackground(null);
-            drawing.isEraser = !drawing.isEraser;
-            if(drawing.isEraser) btnEraser.setBackground(Color.ORANGE);
-            else btnEraser.setBackground(null);
+            btnFill.setBackground(Color.white);
+            drawing.isEraser = true;
             drawing.isText = false;
-            btnText.setBackground(null);
             drawArea.Eraser();
         });
 
@@ -562,7 +547,6 @@ public class BK_paint_frame extends JFrame {
         btnEditColor.addActionListener(e -> {
             drawArea.ColorChooser(ColorChooser.EditColor());
             drawing.isEraser = false;
-            btnEraser.setBackground(null);
         });
         controlPanel.add(btnEditColor);
         btnEditColor.setMargin(new Insets(-1, -1,-1,-1));
@@ -619,7 +603,7 @@ public class BK_paint_frame extends JFrame {
 
         drawArea.addMouseWheelListener(e -> {                       // Sự kiện lăn chuột ------------------
             int steps = e.getWheelRotation();
-            scale -= steps*5;
+            scale -= steps*3;
             try {
                 Zoom(scale);
             } catch (Exception ex){
@@ -630,7 +614,7 @@ public class BK_paint_frame extends JFrame {
         frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
         frame.addWindowListener(new WindowAdapter() {
             @Override
-            public void windowClosing(WindowEvent e) {      // sự kiện close window -------------
+            public void windowClosing(WindowEvent e) {      // SU KIEN DONG CUA SO -------------
 
                 if(!isSaved) {
                     Icon icon = new ImageIcon(getClass().getResource("image/logo2.png"));
@@ -642,7 +626,7 @@ public class BK_paint_frame extends JFrame {
                         drawing.graphic2d.dispose();                        // HỦY ĐỐI TƯỢNG GRAPHIC KHI EXIT
                         System.exit(0);
                     } else if (n == JOptionPane.OK_OPTION){
-                        if(new OpenAndSaveImage().SaveImg(drawing.image)) {
+                        if(new SaveImage().SaveImg(drawing.image)) {
                             drawArea.DeleteCapFrame();
                             drawing.graphic2d.dispose();
                             System.exit(1);
@@ -661,6 +645,7 @@ public class BK_paint_frame extends JFrame {
         });
 
         frame.setJMenuBar(CreateMenu());
+//        container.setCursor(new Cursor(3));
         int h = Toolkit.getDefaultToolkit().getScreenSize().height;
         int w = Toolkit.getDefaultToolkit().getScreenSize().width;
         int frWidth = (int) (w * 0.85);
@@ -691,18 +676,17 @@ public class BK_paint_frame extends JFrame {
 
         iOpen.addActionListener(e -> {
             drawing.isFilling = false;
-            btnFill.setBackground(null);
-            OpenAndSaveImage open = new OpenAndSaveImage();
+            btnFill.setBackground(Color.white);
+            OpenImage open = new OpenImage();
             drawing.buffImg2 = open.OpenImg();
             drawArea.Open(drawing.buffImg2);
             scale = 0;
         });
         iSave.addActionListener(e -> {
-//            drawing.isFilling = false;
-//            btnFill.setBackground(null);
-//            drawing.isEraser = false;
-//            btnEraser.setBackground(null);
-            OpenAndSaveImage save = new OpenAndSaveImage();
+            drawing.isFilling = false;
+            btnFill.setBackground(Color.white);
+            drawing.isEraser = false;
+            SaveImage save = new SaveImage();
             isSaved = save.SaveImg(drawing.image);
         });
         iUndo.addActionListener(e -> drawArea.Undo(true));
@@ -729,12 +713,27 @@ public class BK_paint_frame extends JFrame {
     }
     void Zoom(long scale){                      // Zoom khi lăn chuột
         try {                                   // scale tăng/giảm phụ thuộc độ lăn của chuột
-//            scale -= scale % 5;
+            scale -= scale % 5;
             drawArea.Open(resizeImage.scale(drawing.buffImg2, drawing.fwidth, drawing.fheight, scale));
             float a = (int)((scale/200f + 1) * 10000) / 100f;
             ratio.setText(" ZOOM: " + a + "%    ");
         } catch (Exception ex){
             JOptionPane.showMessageDialog(null, "Too small/large !");
+        }
+    }
+    void comfirmSave(){
+        Icon icon = new ImageIcon(getClass().getResource("image/logo2.png"));
+        int n = JOptionPane.showConfirmDialog(null,
+                "Do you want to SAVE ?",
+                "Save?", JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE, icon);
+
+        if(n == JOptionPane.OK_OPTION){
+            try{
+                new SaveImage().SaveImg(drawing.image);
+                isSaved = true;
+            } catch (Exception e){
+                JOptionPane.showMessageDialog(null, "ERROR");
+            }
         }
     }
 }
