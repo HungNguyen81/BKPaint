@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/banh.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/bay.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/buom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/bus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/cho.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/gau.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/hoa.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/meo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ngam.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/oc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ship.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/tao.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/tho.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/train.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/banh.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/bay.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/buom.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/bus.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/cho.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/gau.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/hoa.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/meo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ngam.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/oc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ong.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ong.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ship.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/tao.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/tho.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/train.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawingShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawingShape.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/resizeImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/resizeImage.java" afterDir="false" />
-    </list>
+    <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
