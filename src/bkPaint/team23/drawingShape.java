@@ -44,11 +44,6 @@ public class drawingShape extends drawing {
             isPressed = true;
         }
     };
-    public static void createLine(Graphics g, Point oldPos, Point curPos){
-        isPressed = true;
-        g.drawLine(oldPos.x, oldPos.y, curPos.x, curPos.y);
-
-    }
 
         public static void createShape(Point oldPos, Point curPos) {
             isShape = true;
