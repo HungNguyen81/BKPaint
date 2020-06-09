@@ -1,7 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="" />
+    <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/META-INF/BK paint.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/BK_paint_frame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/ColorChooser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/DemoJMenu$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/DemoJMenu$PopupListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/DemoJMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/FillTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/Hinhcosan$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/Hinhcosan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/OpenAndSaveImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/OpenImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/SaveImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/TextTool$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/TextTool$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/TextTool$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/TextTool$fontComboBoxRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/TextTool$styleComboBoxRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/TextTool.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/createReplayVid$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/createReplayVid$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/createReplayVid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/drawing$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/drawing$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/drawing$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/drawing.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/drawingShape$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/drawingShape$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/drawingShape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/cursor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/fill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/icon app.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/logo BK.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/logo1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/oval.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/pause.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/playing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/rectangle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/save.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/text.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/vid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/video.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/zin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/image/zout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/bkPaint/team23/resizeImage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/banh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/bay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/buom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/bus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/cho.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/gau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/hoa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/meo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/ngam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/oc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/ong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/ship.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/tao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/tho.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BK paint/hinhcosan/train.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,22 +139,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591607155348">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591720578261">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591607155348" />
-    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591607155348">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591720578261" />
+    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591720578261">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591607155348" />
-    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591607155348">
+    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591720578261" />
+    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591720578261">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591607155348" />
-    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591607155348">
+    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591720578261" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591720578261">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591607155348" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591720578261" />
     <state x="333" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1591718914383">
       <screen x="0" y="0" width="1273" height="768" />
     </state>

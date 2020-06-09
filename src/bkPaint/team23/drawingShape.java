@@ -13,7 +13,7 @@ public class drawingShape extends drawing {
     static final int OVAL = 2;
     static final int LINE = 3;
 
-    public static boolean isPressed = false;
+//    public static boolean isPressed = false;
 
 
         public static void createShape(Point oldPos, Point curPos) {
