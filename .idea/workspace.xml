@@ -3,7 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/banh.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/bay.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/buom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/bus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/cho.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/gau.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/hoa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/meo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ngam.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/oc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ong.png" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ong.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/ship.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/tao.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/tho.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/hinhcosan/train.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,25 +72,25 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591603681019">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591607155348">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
-    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591603681019">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591607155348" />
+    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591607155348">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
-    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591603681019">
+    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591607155348" />
+    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591607155348">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
-    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591603681019">
+    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591607155348" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591607155348">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
-    <state x="333" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1591602331667">
+    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591607155348" />
+    <state x="333" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1591605963555">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state x="333" y="208" key="com.intellij.ide.util.TipDialog/0.0.1273.768@0.0.1273.768" timestamp="1591602331667" />
+    <state x="333" y="208" key="com.intellij.ide.util.TipDialog/0.0.1273.768@0.0.1273.768" timestamp="1591605963555" />
   </component>
 </project>

@@ -7,7 +7,7 @@ import java.awt.event.*;
 import java.awt.image.BufferedImage;
 
 public class drawingShape extends drawing {
-    public static  int  X,Y,W,H,a,b,c,d;
+    //public static  int  X,Y,W,H,a,b,c,d;
     public static int typeOfShape = 1;
     static final int RECT = 1;
     static final int OVAL = 2;

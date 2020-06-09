@@ -4,6 +4,8 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 
 public class resizeImage {
+    private static BufferedImage bi;
+
     public static BufferedImage scale(BufferedImage image, int w, int h) { // scale lại ảnh khi OPEN
         int type = (image.getTransparency() ==Transparency.OPAQUE)? BufferedImage.TYPE_INT_RGB:BufferedImage.TYPE_INT_ARGB;
 
@@ -18,7 +20,7 @@ public class resizeImage {
             height = w*ih/iw;
         }
 
-        BufferedImage bi = new BufferedImage(w, h, type);
+        bi = new BufferedImage(w, h, type);
         try {
             Graphics2D g = bi.createGraphics();
             g.setPaint(Color.white);
@@ -48,7 +50,7 @@ public class resizeImage {
                 height = w * ih / iw;
             }
 
-            BufferedImage bi = new BufferedImage(w, h, type);
+            bi = new BufferedImage(w, h, type);
             try {
                 Graphics2D g = bi.createGraphics();
                 g.setPaint(Color.white);
