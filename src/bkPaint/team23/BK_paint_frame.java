@@ -712,6 +712,8 @@ public class BK_paint_frame extends JFrame {
                     i, new Point(0,0),"penCursor" );
             frame.setCursor(penCursor);
         }
+        frame.setIconImage(Toolkit.getDefaultToolkit().
+                getImage(getClass().getResource("image/icon.png")));
         frame.setVisible(true);
     }
 
