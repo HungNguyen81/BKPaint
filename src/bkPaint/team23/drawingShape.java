@@ -12,6 +12,9 @@ public class drawingShape extends drawing {
     static final int RECT = 1;
     static final int OVAL = 2;
     static final int LINE = 3;
+    static boolean isLine = false;
+    static boolean isRect = false;
+    static boolean isOval = false;
 
 //    public static boolean isPressed = false;
 
@@ -23,8 +26,10 @@ public class drawingShape extends drawing {
             isText = false;
 
 
+
             switch (typeOfShape){
                 case 1:
+//                    changeRectState();
                     graphic2d.setPaint((isColorChooser)? color: Color.getColor("myColor"));
                     BasicStroke stroke1 = new BasicStroke(penSize, BasicStroke.CAP_ROUND, BasicStroke.JOIN_MITER);
                     graphic2d.setStroke(stroke1);
@@ -35,6 +40,7 @@ public class drawingShape extends drawing {
                     graphic2d.drawRect(x, y, w, h);
                     break;
                 case 2:
+//                    changeOvalState();
                     graphic2d.setPaint((isColorChooser)? color: Color.getColor("myColor"));
                     BasicStroke stroke2 = new BasicStroke(penSize, BasicStroke.CAP_ROUND, BasicStroke.JOIN_BEVEL);
                     graphic2d.setStroke(stroke2);
@@ -47,6 +53,7 @@ public class drawingShape extends drawing {
                     break;
 
                 case 3:
+//                    changeLineState();
                     graphic2d.setPaint((isColorChooser) ? color : Color.getColor("myColor"));
                     BasicStroke stroke3 = new BasicStroke(penSize, BasicStroke.CAP_ROUND, BasicStroke.JOIN_MITER);
                     graphic2d.setStroke(stroke3);
@@ -54,5 +61,23 @@ public class drawingShape extends drawing {
 
                     break;
             }
+        }
+        public static boolean CheckState(){
+            return isRect || isOval || isLine;
+        }
+        public static void changeRectState(){
+            isRect = !isRect;
+            isOval = false;
+            isLine = false;
+        }
+        public static void changeOvalState(){
+            isOval = !isOval;
+            isRect = false;
+            isLine = false;
+        }
+        public static void changeLineState(){
+            isLine = !isLine;
+            isRect = false;
+            isOval = false;
         }
     }

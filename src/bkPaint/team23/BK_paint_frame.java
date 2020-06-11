@@ -38,6 +38,9 @@ public class BK_paint_frame extends JFrame {
     private JButton btnHelp;
     private JButton btnZoomOut;
     private JButton btnZoomIn;
+    JButton btnRect;
+    JButton btnOval;
+    JButton btnLine;
 
     private JComboBox<String> jcSize;
     private JComboBox<String> jcBrush;
@@ -356,21 +359,21 @@ public class BK_paint_frame extends JFrame {
         shapePanel.setLayout(new GridLayout(1,3));
         controlPanel.add(shapePanel);
 
-        JButton btnRect = new JButton();
+        btnRect = new JButton();
         Icon icRect = new ImageIcon(getClass().getResource("image/rectangle.png"));
         btnRect.setIcon(icRect);
         btnRect.setBackground(Color.lightGray);
         btnRect.setMargin(new Insets(0,0,0,0));
         shapePanel.add(btnRect);
 
-        JButton btnOval = new JButton();
+        btnOval = new JButton();
         Icon icOval = new ImageIcon(getClass().getResource("image/oval.png"));
         btnOval.setIcon(icOval);
         btnOval.setBackground(Color.lightGray);
         btnOval.setMargin(new Insets(0,0,0,0));
         shapePanel.add(btnOval);
 
-        JButton btnLine = new JButton();
+        btnLine = new JButton();
         Icon icLine = new ImageIcon(getClass().getResource("image/line.png"));
         btnLine.setIcon(icLine);
         btnLine.setBackground(Color.lightGray);
@@ -386,24 +389,42 @@ public class BK_paint_frame extends JFrame {
                 drawing.isFilling = false;
                 drawing.isEraser = false;
                 btnEraser.setBackground(null);
-                drawing.isShape = !(drawing.isShape);
+//                drawing.isShape = !(drawing.isShape);
+                drawingShape.changeRectState();
+                drawing.isShape = drawingShape.CheckState();
                 drawingShape.typeOfShape = drawingShape.RECT;
+
+                ChangebtnRectState();
+                ChangebtnOvalState();
+                ChangebtnLineState();
 
             } else if (e.getSource() == btnOval){
                 drawing.isText = false;
                 drawing.isFilling = false;
                 drawing.isEraser = false;
                 btnEraser.setBackground(null);
-                drawing.isShape = !(drawing.isShape);
+//                drawing.isShape = !(drawing.isShape);
+                drawingShape.changeOvalState();
+                drawing.isShape = drawingShape.CheckState();
                 drawingShape.typeOfShape = drawingShape.OVAL;
+
+                ChangebtnRectState();
+                ChangebtnOvalState();
+                ChangebtnLineState();
 
             } else if (e.getSource() == btnLine){
                 drawing.isText = false;
                 drawing.isFilling = false;
                 drawing.isEraser = false;
                 btnEraser.setBackground(null);
-                drawing.isShape = !(drawing.isShape);
+//                drawing.isShape = !(drawing.isShape);
+                drawingShape.changeLineState();
+                drawing.isShape = drawingShape.CheckState();
                 drawingShape.typeOfShape = drawingShape.LINE;
+
+                ChangebtnRectState();
+                ChangebtnOvalState();
+                ChangebtnLineState();
 
             }
         };
@@ -677,9 +698,6 @@ public class BK_paint_frame extends JFrame {
         int frWidth = (int) (w * 0.85);
         int frHeight = (int) (h * 0.95);
         frame.setBounds((w - frWidth)/2, (h - frHeight)/2 - 10, frWidth, frHeight);
-//        frame.setBounds((w-1000)/2, (h-720)/2 - 5, 1000, 720);
-//        frame.setBounds(0, 0, w, h);
-//        frame.setCursor();
 
         String dir = getClass().getResource("image/cursor.png").toString().substring(5);
         File f = new File(dir);
@@ -763,6 +781,27 @@ public class BK_paint_frame extends JFrame {
             ratio.setText(" ZOOM: " + a + "%    ");
         } catch (Exception ex){
             JOptionPane.showMessageDialog(null, "Too small/large !");
+        }
+    }
+    void ChangebtnRectState(){
+        if(!drawingShape.isRect){
+            btnRect.setIcon(new ImageIcon(getClass().getResource("image/rectangle.png")));
+        } else {
+            btnRect.setIcon(new ImageIcon(getClass().getResource("image/rectangle1.png")));
+        }
+    }
+    void ChangebtnOvalState(){
+        if(!drawingShape.isOval){
+            btnOval.setIcon(new ImageIcon(getClass().getResource("image/oval.png")));
+        } else {
+            btnOval.setIcon(new ImageIcon(getClass().getResource("image/oval1.png")));
+        }
+    }
+    void ChangebtnLineState(){
+        if(!drawingShape.isLine){
+            btnLine.setIcon(new ImageIcon(getClass().getResource("image/line.png")));
+        } else {
+            btnLine.setIcon(new ImageIcon(getClass().getResource("image/line1.png")));
         }
     }
 }
