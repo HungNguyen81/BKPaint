@@ -309,6 +309,7 @@ public class drawing extends JComponent {
     public void Open(BufferedImage img){
         buffImg = copyImage(img);
         image = buffImg;
+        buffImg2 = copyImage(buffImg);
         graphic2d = (Graphics2D) image.getGraphics();
         graphic2d.drawImage(buffImg, 0, 0, null);
         repaint();

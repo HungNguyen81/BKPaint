@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BK Paint">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="BK Paint.jar" />
+  </artifact>
+</component>

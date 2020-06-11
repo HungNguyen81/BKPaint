@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BK Paint" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BK_Paint.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +30,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="BK_paint_frame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -56,22 +70,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591844787873">
+    <state x="416" y="125" key="FileChooserDialogImpl" timestamp="1591846726085">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591844787873" />
-    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591844787872">
+    <state x="416" y="125" key="FileChooserDialogImpl/0.0.1273.768@0.0.1273.768" timestamp="1591846726085" />
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591847792297">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591844787872" />
-    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591844787872">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591847792297" />
+    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591847792297">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591844787872" />
-    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591844787872">
+    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591847792297" />
+    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591847792297">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591844787872" />
+    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591847792297" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591847792297">
+      <screen x="0" y="0" width="1273" height="768" />
+    </state>
+    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591847792297" />
+    <state x="116" y="0" key="SettingsEditor" timestamp="1591846729859">
+      <screen x="0" y="0" width="1273" height="768" />
+    </state>
+    <state x="116" y="0" key="SettingsEditor/0.0.1273.768@0.0.1273.768" timestamp="1591846729859" />
     <state x="333" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1591843313809">
       <screen x="0" y="0" width="1273" height="768" />
     </state>

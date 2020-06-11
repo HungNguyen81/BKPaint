@@ -28,16 +28,19 @@ public class Hinhcosan {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Dir = System.getProperty("user.dir");
+                boolean ok = true;
                 if (!isSaved) {
-                    comfirmSave();
+                    ok = comfirmSave();
                 }
                 File iFile = new File(Dir1 + listImageSrc[drowDown.getSelectedIndex()]);
-                isSaved = true;
-                try {
-                    BufferedImage bi = ImageIO.read(iFile);
-                    drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
-                } catch (Exception exp) {
-                    JOptionPane.showMessageDialog(null, "ERROR!", "Warning", JOptionPane.WARNING_MESSAGE);
+                if(ok){
+                    try {
+                        isSaved = true;
+                        BufferedImage bi = ImageIO.read(iFile);
+                        drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
+                    } catch (Exception exp) {
+                        JOptionPane.showMessageDialog(null, "ERROR!", "Warning", JOptionPane.WARNING_MESSAGE);
+                    }
                 }
 
             }
@@ -46,7 +49,7 @@ public class Hinhcosan {
         return drowDown;
     }
 
-    void comfirmSave() {
+    boolean comfirmSave() {
         Icon icon = new ImageIcon(getClass().getResource("image/logo2.png"));
         int n = JOptionPane.showConfirmDialog(null,
                 "Do you want to SAVE ?",
@@ -60,6 +63,7 @@ public class Hinhcosan {
                 JOptionPane.showMessageDialog(null, "ERROR");
             }
         }
+        else return n != JOptionPane.CANCEL_OPTION && n != JOptionPane.CLOSED_OPTION;
+        return true;
     }
-
 }
