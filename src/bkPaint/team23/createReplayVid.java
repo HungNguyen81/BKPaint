@@ -46,7 +46,7 @@ public class createReplayVid{
         });
         Container container = frame.getContentPane();
             try {
-                f = new File(dir+"/frame/BKpaint" + count + ".jpg");
+                f = new File(dir + "/frame/BKpaint" + count + ".png");
                 img = ImageIO.read(f);
                 image = Toolkit.getDefaultToolkit().createImage(img.getSource()); // convert BufferedImage to Image
                 JPanel jp = new JPanel();
@@ -78,7 +78,10 @@ public class createReplayVid{
 
                 int h = Toolkit.getDefaultToolkit().getScreenSize().height;
                 int w = Toolkit.getDefaultToolkit().getScreenSize().width;
-                frame.setBounds((w-1000)/2, (h-720)/2 - 5, 1000, 720);
+//                frame.setBounds((w-1000)/2, (h-720)/2 - 5, 1000, 720);
+                int frWidth = (int) (w * 0.85);
+                int frHeight = (int) (h * 0.95);
+                frame.setBounds((w - frWidth)/2, (h - frHeight)/2 - 10, frWidth, frHeight);
                 frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                 frame.setVisible(true);      // call one time to make only one frame, many calls cause many frames
 
@@ -120,8 +123,8 @@ public class createReplayVid{
                         }
                     }
                 });
-            } catch (IOException ex) {
-                JOptionPane.showMessageDialog(null, "error");
+            } catch (Exception ex) {
+                JOptionPane.showMessageDialog(null, "Video not found !!!");
             }
         }
         void DelayFrame(String dir, int numF){
@@ -145,7 +148,7 @@ public class createReplayVid{
                    }
                }
                if(count <= numF && isPlaying && !intro){              // display replay video
-                   f = new File(dir +"/frame/BKpaint" + count + ".jpg");
+                   f = new File(dir +"/frame/BKpaint" + count + ".png");
                    try {
                        img = ImageIO.read(f);
                    } catch (IOException e) {

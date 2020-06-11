@@ -42,6 +42,7 @@ public class drawing extends JComponent {
     public static boolean isShape;
     public static boolean isColorChooser; // isColorChooser = true, lần chọn màu gần nhất là bằng JColorChooser
     public static boolean isRecord;
+    static boolean createFolder;
     static final int MAX_UNDO = 30;        // CHO PHÉP UNDO TỐI ĐA 30 LẦN
 
     public void Init(){
@@ -73,6 +74,9 @@ public class drawing extends JComponent {
         sDir = System.getProperty("user.dir");              // LẤY ĐƯỜNG DẪN ĐẾN THƯ MỤC CHỨA FILE CHƯƠNG TRÌNH
         frameArr = new int[MAX_UNDO];                       // mảng chỉ số của frame
         bfImg = new BufferedImage[MAX_UNDO];                // mảng các ảnh frame
+
+        File f = new File(sDir + "\\frame");
+        createFolder = f.mkdirs();
 
         brush = new BasicStroke(penSize, BasicStroke.CAP_ROUND, BasicStroke.JOIN_BEVEL);
         pencil = new BasicStroke(1, BasicStroke.CAP_ROUND, BasicStroke.JOIN_BEVEL);
@@ -157,12 +161,6 @@ public class drawing extends JComponent {
                         MaxNumFrame = Math.max(MaxNumFrame, numFrame);
                     }
                 }
-//                if(isShape){
-//                    curX = e.getX();
-//                    curY = e.getY();
-//                    drawingShape.createShape(new Point(oldX, oldY), new Point(curX, curY));
-//                    repaint();
-//                }
             }
         });
         addMouseListener(new MouseAdapter() {
@@ -256,9 +254,12 @@ public class drawing extends JComponent {
     }
 
     void CapFrame(){    // GHI ĐỐI TƯỢNG ẢNH VÀO FILE .JPG
-        File f = new File(sDir +"/frame/BKpaint"+ numFrame + ".jpg");
+        if(!createFolder){
+           createFolder = new File(sDir +"\\frame").mkdir();
+        }
+        File f = new File(sDir +"/frame/BKpaint"+ numFrame + ".png");
         try {
-            ImageIO.write(buffImg, "jpg", f);
+            ImageIO.write((BufferedImage)image, "png", f);
             if(numFrame == MaxNumFrame) MaxNumFrame++;
             numFrame++;
         } catch (IOException e) {
@@ -266,13 +267,10 @@ public class drawing extends JComponent {
         }
     }
     public void DeleteCapFrame(){
-        for(int i = MaxNumFrame; i >= 0; i--){
-            File f = new File(sDir + "/frame/BKpaint" + i + ".jpg");
-            try{
-                if(f.delete());                    // delete all stored frames (frames  of replay video)
-            } catch (Exception e){
-                JOptionPane.showMessageDialog(null,"ERROR");
-            }
+        if(createFolder){
+            File f = new File(sDir + "\\frame");
+            delete(f);
+            createFolder = !(f.delete());
         }
         MaxNumFrame = numFrame = 1;                 // MaxNumFrame = 1 KHI XÓA TẤT CẢ FRAME ĐÃ LƯU TRỮ
     }
@@ -309,7 +307,6 @@ public class drawing extends JComponent {
     public void Open(BufferedImage img){
         buffImg = copyImage(img);
         image = buffImg;
-        buffImg2 = copyImage(buffImg);
         graphic2d = (Graphics2D) image.getGraphics();
         graphic2d.drawImage(buffImg, 0, 0, null);
         repaint();
@@ -321,5 +318,30 @@ public class drawing extends JComponent {
         color = Color.getColor("JColorChooser",c);
         BK_paint_frame.curColor.setBackground(color);
         repaint();
+    }
+    public static void delete(File file) {
+
+        if (file.isDirectory()) {
+            // directory is empty, then delete it
+            if (file.list().length == 0) {
+                file.delete();
+            } else {
+                // list all the directory contents
+                String[] files = file.list();
+                for (String temp : files) {
+                    // construct the file structure
+                    File fileDelete = new File(file, temp);
+                    // recursive delete
+                    delete(fileDelete);
+                }
+                // check the directory again, if empty then delete it
+                if (file.list().length == 0) {
+                    file.delete();
+                }
+            }
+        } else {
+            // if file, then delete it
+            file.delete();
+        }
     }
 }

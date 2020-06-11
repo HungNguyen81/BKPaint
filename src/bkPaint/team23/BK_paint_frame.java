@@ -1,8 +1,11 @@
 package bkPaint.team23;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
 
 public class BK_paint_frame extends JFrame {
     private JButton btnBlack;
@@ -309,7 +312,7 @@ public class BK_paint_frame extends JFrame {
 
         JPanel hcs = new JPanel();
         hcs.setLayout(new GridLayout(2,1));
-        Label lbHcs = new Label("Painting Image:");
+        Label lbHcs = new Label(" Painting: ");
         lbHcs.setBackground(Color.lightGray);
         hcs.add(lbHcs);
         hcs.add(new Hinhcosan().createCB());
@@ -674,6 +677,23 @@ public class BK_paint_frame extends JFrame {
         int frWidth = (int) (w * 0.85);
         int frHeight = (int) (h * 0.95);
         frame.setBounds((w - frWidth)/2, (h - frHeight)/2 - 10, frWidth, frHeight);
+//        frame.setBounds((w-1000)/2, (h-720)/2 - 5, 1000, 720);
+//        frame.setBounds(0, 0, w, h);
+//        frame.setCursor();
+
+        String dir = getClass().getResource("image/cursor.png").toString().substring(5);
+        File f = new File(dir);
+        Image i = createImage(10,10);
+        try{
+            i = ImageIO.read(f);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        if(i != null){
+            Cursor penCursor = Toolkit.getDefaultToolkit().createCustomCursor(
+                    i, new Point(0,0),"penCursor" );
+            frame.setCursor(penCursor);
+        }
         frame.setVisible(true);
     }
 

@@ -15,12 +15,12 @@ public class Hinhcosan {
     String Dir;
 
     public JComboBox createCB() {
-        String[] Hinhcosan = {"con thỏ", "con mèo", "con chó", "con gấu", "con ong", "con bướm", "máy bay", "xe buýt", "ốc sên",
+        String[] Hinhcosan = {"","con thỏ", "con mèo", "con chó", "con gấu", "con ong", "con bướm", "máy bay", "xe buýt", "ốc sên",
                 "bánh sinh nhật", "bông hoa", "quả táo", "tàu ngầm", "tàu thủy", "tàu hỏa"};
         JComboBox drowDown = new JComboBox(Hinhcosan);
 //        controlPanel.add(drowDown);
         String Dir1 = System.getProperty("user.dir") + "\\src\\hinhcosan\\";
-        String[] listImageSrc = {"tho.png", "meo.png", "cho.png", "gau.png",
+        String[] listImageSrc = {"","tho.png", "meo.png", "cho.png", "gau.png",
                 "ong.png", "buom.png", "bay.png", "bus.png", "oc.png", "banh.png",
                 "hoa.png", "tao.png", "ngam.png", "ship.png", "train.png"};
 
@@ -37,6 +37,7 @@ public class Hinhcosan {
                     try {
                         isSaved = true;
                         BufferedImage bi = ImageIO.read(iFile);
+                        drawing.buffImg2 = bi;
                         drawArea.Open(resizeImage.scale(bi, drawing.fwidth, drawing.fheight));
                     } catch (Exception exp) {
                         JOptionPane.showMessageDialog(null, "ERROR!", "Warning", JOptionPane.WARNING_MESSAGE);

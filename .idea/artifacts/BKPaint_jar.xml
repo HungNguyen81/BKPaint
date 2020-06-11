@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BKPaint:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="BKPaint.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../OOP_assignment_unit_6/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="BKPaint" />
+    </root>
+  </artifact>
+</component>

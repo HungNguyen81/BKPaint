@@ -2,16 +2,118 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="BK Paint" />
+      <artifact name="BKPaint:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BK_Paint.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BKPaint_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/BK_Paint.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint43.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint44.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint45.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint46.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint47.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint49.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint50.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint53.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint54.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint55.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint56.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint57.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint58.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint59.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint60.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint61.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint62.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint63.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint64.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint65.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint66.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint67.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint68.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint69.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint70.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint71.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint72.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint73.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint74.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint75.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint76.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint77.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint78.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint79.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint80.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint81.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint82.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint83.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint84.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint85.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint86.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint87.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint88.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint89.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint90.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint91.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint92.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint93.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint94.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frame/BKpaint95.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/BK_paint_frame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/Hinhcosan.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/createReplayVid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/createReplayVid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/Hinhcosan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/createReplayVid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/createReplayVid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,8 +135,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration name="BK_paint_frame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -70,30 +172,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="416" y="125" key="FileChooserDialogImpl" timestamp="1591846726085">
+    <state x="366" y="168" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591848964819">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state x="416" y="125" key="FileChooserDialogImpl/0.0.1273.768@0.0.1273.768" timestamp="1591846726085" />
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591847792297">
+    <state x="366" y="168" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1273.768@0.0.1273.768" timestamp="1591848964819" />
+    <state x="416" y="125" key="FileChooserDialogImpl" timestamp="1591848993366">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591847792297" />
-    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591847792297">
+    <state x="416" y="125" key="FileChooserDialogImpl/0.0.1273.768@0.0.1273.768" timestamp="1591848993366" />
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591875824054">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591847792297" />
-    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591847792297">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591875824054" />
+    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591875824054">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591847792297" />
-    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591847792297">
+    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591875824054" />
+    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591875824054">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591847792297" />
-    <state x="116" y="0" key="SettingsEditor" timestamp="1591846729859">
+    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591875824054" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591875824054">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state x="116" y="0" key="SettingsEditor/0.0.1273.768@0.0.1273.768" timestamp="1591846729859" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591875824054" />
+    <state x="109" y="0" key="SettingsEditor" timestamp="1591848994695">
+      <screen x="0" y="0" width="1273" height="768" />
+    </state>
+    <state x="109" y="0" key="SettingsEditor/0.0.1273.768@0.0.1273.768" timestamp="1591848994695" />
     <state x="333" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1591843313809">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
