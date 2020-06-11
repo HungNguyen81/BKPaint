@@ -15,12 +15,13 @@ public class Hinhcosan {
     String Dir;
 
     public JComboBox createCB() {
-        String[] Hinhcosan = {"","con thỏ", "con mèo", "con chó", "con gấu", "con ong", "con bướm", "máy bay", "xe buýt", "ốc sên",
-                "bánh sinh nhật", "bông hoa", "quả táo", "tàu ngầm", "tàu thủy", "tàu hỏa"};
+        String[] Hinhcosan = {" BK Paint"," con thỏ", " con mèo", " con chó", " con gấu", " con ong", " con bướm",
+                " máy bay", " xe buýt", " ốc sên", " bánh sinh nhật", " bông hoa", " quả táo",
+                " tàu ngầm", " tàu thủy", " tàu hỏa"};
         JComboBox drowDown = new JComboBox(Hinhcosan);
 //        controlPanel.add(drowDown);
         String Dir1 = System.getProperty("user.dir") + "\\src\\hinhcosan\\";
-        String[] listImageSrc = {"","tho.png", "meo.png", "cho.png", "gau.png",
+        String[] listImageSrc = {"10.png","tho.png", "meo.png", "cho.png", "gau.png",
                 "ong.png", "buom.png", "bay.png", "bus.png", "oc.png", "banh.png",
                 "hoa.png", "tao.png", "ngam.png", "ship.png", "train.png"};
 

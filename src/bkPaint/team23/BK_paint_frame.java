@@ -545,6 +545,8 @@ public class BK_paint_frame extends JFrame {
 
         ratio = new JLabel(" ZOOM: 100.0%    ");
         colorPanel.setBorder(BorderFactory.createLineBorder(Color.red, 1, true));
+        colorPanel.add(new JLabel(" COLOR: "));
+        colorPanel.add(curColor);
         colorPanel.add(ratio);
         colorPanel.add(btnBlack); //1
         colorPanel.add(btnBlue);
@@ -623,8 +625,6 @@ public class BK_paint_frame extends JFrame {
         btnHelp.setMargin(new Insets(-1, -1,-1,-1));
         Icon iconHelp = new ImageIcon(getClass().getResource("image/help.png"));
         btnHelp.setIcon(iconHelp);
-        controlPanel.add(new JLabel(" COLOR: "));
-        controlPanel.add(curColor);
 
         colorPanel.add(new JLabel("  "));
         JButton del = new JButton("Delete Records");   // XÓA CÁC BẢN GHI CỦA VIDEO REPLAY ----------------
