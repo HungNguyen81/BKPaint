@@ -306,7 +306,14 @@ public class BK_paint_frame extends JFrame {
         btnRedo.setIcon(iconRedo);
 
         controlPanel.add(new JLabel(" "));
-        controlPanel.add(new Hinhcosan().createCB());
+
+        JPanel hcs = new JPanel();
+        hcs.setLayout(new GridLayout(2,1));
+        Label lbHcs = new Label("Painting Image:");
+        lbHcs.setBackground(Color.lightGray);
+        hcs.add(lbHcs);
+        hcs.add(new Hinhcosan().createCB());
+        controlPanel.add(hcs);
 //--------------------------------------------------------------------- CLEAR PANEL ------------------------
         JPanel textPanel = new JPanel();
         textPanel.setBackground(Color.lightGray);
