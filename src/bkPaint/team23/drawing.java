@@ -161,6 +161,38 @@ public class drawing extends JComponent {
                         MaxNumFrame = Math.max(MaxNumFrame, numFrame);
                     }
                 }
+                if(isShape){
+                    if(!drawingShape.isPressed) {
+//                        buffImg2 = copyImage((BufferedImage) image);
+//                        bfImg[index] = copyImage(buffImg2);
+                        drawingShape.isPressed = true;
+//                        graphic2d = (Graphics2D) buffImg.getGraphics();
+//                        repaint();
+                    }
+                    else{
+                        buffImg = copyImage(bfImg[index-1]);
+                        buffImg2 = copyImage(bfImg[index-1]);
+
+                        image = buffImg;
+                        graphic2d = (Graphics2D) image.getGraphics();
+                        if (!isColorChooser) color = Color.getColor("myColor");
+                        graphic2d.setPaint(color);
+                        Open(resizeImage.scale(buffImg, fwidth, fheight, BK_paint_frame.scale));
+                        repaint();
+                        drawingShape.createShape(new Point(oldX, oldY), new Point(e.getX(), e.getY()), graphic2d);
+                        if (isRecord) CapFrame();
+                    }
+//                    frameArr[index] = numFrame;                 // lưu lại từng frame và chỉ số
+//                    if (index == MAX_UNDO - 1) {                  // nếu số lượt undo đạt giới hạn
+//                        for (int i = 0; i < MAX_UNDO - 1; i++) {
+//                            bfImg[i] = copyImage(bfImg[i + 1]);
+//                            frameArr[i] = frameArr[i + 1];
+//                        }
+//                    } else {
+//                        index++;
+//                    }
+
+                }
             }
         });
         addMouseListener(new MouseAdapter() {
@@ -171,9 +203,10 @@ public class drawing extends JComponent {
                 if(isShape){
                     curX = e.getX();
                     curY = e.getY();
-                    drawingShape.createShape(new Point(oldX, oldY), new Point(curX, curY));
+                    drawingShape.createShape(new Point(oldX, oldY), new Point(curX, curY), graphic2d);
                     buffImg2 = copyImage(buffImg);
                     repaint();
+                    drawingShape.isPressed = false;
                 }
             }
         });
