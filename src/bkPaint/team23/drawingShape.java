@@ -80,4 +80,9 @@ public class drawingShape extends drawing {
             isRect = false;
             isOval = false;
         }
+        public static void setDisable(){
+            isLine = false;
+            isRect = false;
+            isOval = false;
+        }
     }

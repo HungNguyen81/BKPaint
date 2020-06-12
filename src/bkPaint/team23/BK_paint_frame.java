@@ -489,6 +489,8 @@ public class BK_paint_frame extends JFrame {
             btnFill.setBackground(null);
             drawing.isEraser = false;
             btnEraser.setBackground(null);
+            setShapeDisable();
+
             if(!drawing.isText){
                 TextTool.showLastDialog(drawing.graphic2d);
                 drawing.isText = true;
@@ -509,6 +511,7 @@ public class BK_paint_frame extends JFrame {
             drawing.isEraser = false;
             btnEraser.setBackground(null);
             drawing.isShape = false;
+            setShapeDisable();
             if(drawing.isFilling){
                 drawing.isFilling = false;
                 btnFill.setBackground(null);
@@ -532,7 +535,7 @@ public class BK_paint_frame extends JFrame {
         btnEraser.setIcon(iconEraser);
         btnEraser.setMargin(new Insets(-1, -1,-1,-1));
         btnEraser.addActionListener(e -> {
-//            drawing.isEraser = false;
+            setShapeDisable();
             drawing.isFilling = false;
             btnFill.setBackground(null);
             drawing.isEraser = !drawing.isEraser;
@@ -805,5 +808,12 @@ public class BK_paint_frame extends JFrame {
         } else {
             btnLine.setIcon(new ImageIcon(getClass().getResource("image/line1.png")));
         }
+    }
+    void setShapeDisable(){
+        drawingShape.setDisable();
+        ChangebtnLineState();
+        ChangebtnOvalState();
+        ChangebtnRectState();
+        drawing.isShape = false;
     }
 }

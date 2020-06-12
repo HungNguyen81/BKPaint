@@ -303,7 +303,8 @@ public class drawing extends JComponent {
         if(createFolder){
             File f = new File(sDir + "\\frame");
             delete(f);
-            createFolder = !(f.delete());
+            f.delete();
+            createFolder = false;
         }
         MaxNumFrame = numFrame = 1;                 // MaxNumFrame = 1 KHI XÓA TẤT CẢ FRAME ĐÃ LƯU TRỮ
     }
