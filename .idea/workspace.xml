@@ -8,307 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint100.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint101.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint102.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint103.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint104.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint105.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint106.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint107.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint108.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint109.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint110.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint111.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint113.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint115.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint116.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint117.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint118.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint119.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint121.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint122.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint123.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint124.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint125.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint126.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint127.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint129.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint130.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint131.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint132.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint133.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint134.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint135.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint136.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint137.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint138.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint139.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint140.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint141.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint142.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint143.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint145.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint146.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint147.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint148.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint149.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint151.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint153.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint154.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint155.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint156.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint157.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint158.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint159.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint161.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint162.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint163.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint164.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint165.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint166.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint167.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint168.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint169.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint170.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint171.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint172.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint173.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint174.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint175.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint176.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint177.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint178.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint179.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint180.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint181.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint182.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint183.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint184.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint185.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint186.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint187.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint188.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint189.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint190.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint191.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint193.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint194.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint195.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint196.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint197.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint198.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint199.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint200.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint201.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint202.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint203.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint204.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint205.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint206.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint207.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint208.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint209.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint210.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint211.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint212.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint213.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint214.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint215.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint216.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint217.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint218.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint219.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint220.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint221.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint222.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint223.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint224.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint225.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint226.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint227.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint228.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint229.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint230.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint231.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint232.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint233.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint234.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint235.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint236.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint237.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint238.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint239.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint240.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint241.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint242.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint243.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint244.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint245.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint246.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint247.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint248.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint249.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint25.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint250.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint251.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint252.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint253.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint254.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint255.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint256.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint257.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint258.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint259.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint260.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint261.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint262.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint263.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint264.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint265.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint266.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint267.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint268.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint269.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint27.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint270.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint271.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint272.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint273.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint274.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint275.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint276.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint277.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint278.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint279.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint280.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint281.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint282.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint283.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint284.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint285.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint286.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint287.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint288.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint289.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint290.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint291.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint292.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint293.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint294.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint295.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint296.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint297.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint298.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint30.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint31.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint35.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint37.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint38.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint39.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint40.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint41.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint44.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint45.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint46.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint49.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint50.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint55.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint58.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint59.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint61.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint62.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint63.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint65.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint66.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint67.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint68.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint69.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint71.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint73.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint74.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint75.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint77.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint78.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint79.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint80.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint81.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint82.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint85.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint91.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint92.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint93.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint94.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint97.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint98.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frame/BKpaint99.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawingShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawingShape.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -367,6 +67,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="441" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1591936201445">
+      <screen x="0" y="0" width="1273" height="768" />
+    </state>
+    <state x="441" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1273.768@0.0.1273.768" timestamp="1591936201445" />
     <state x="366" y="168" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591848964819">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
@@ -375,22 +79,22 @@
       <screen x="0" y="0" width="1273" height="768" />
     </state>
     <state x="416" y="125" key="FileChooserDialogImpl/0.0.1273.768@0.0.1273.768" timestamp="1591934316171" />
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591934326856">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591937703716">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591934326856" />
-    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591934326856">
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591937703716" />
+    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591937703716">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591934326856" />
-    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591934326856">
+    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591937703716" />
+    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591937703716">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591934326856" />
-    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591934326856">
+    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591937703716" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591937703716">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591934326856" />
+    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591937703716" />
     <state x="109" y="0" key="SettingsEditor" timestamp="1591934318017">
       <screen x="0" y="0" width="1273" height="768" />
     </state>

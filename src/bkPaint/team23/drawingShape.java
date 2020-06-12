@@ -17,6 +17,7 @@ public class drawingShape extends drawing {
     static boolean isOval = false;
 
     public static boolean isPressed = false;
+    public static boolean isShift = false;
 
 
         public static void createShape(Point oldPos, Point curPos, Graphics2D g) {
@@ -37,7 +38,8 @@ public class drawingShape extends drawing {
                     int y = Math.min(curPos.y, oldPos.y);
                     int w = Math.abs(curPos.x - oldPos.x);
                     int h = Math.abs(curPos.y - oldPos.y);
-                    g.drawRect(x, y, w, h);
+                    if(!isShift) g.drawRect(x, y, w, h);
+                    else g.drawRect(x,y, Math.max(w,h), Math.max(w,h));
                     break;
                 case 2:
 //                    changeOvalState();
@@ -49,7 +51,8 @@ public class drawingShape extends drawing {
                     int b = Math.min(curPos.y, oldPos.y);
                     int c = Math.abs(curPos.x - oldPos.x);
                     int d = Math.abs(curPos.y - oldPos.y);
-                    g.drawOval(a,b,c,d);
+                    if(!isShift) g.drawOval(a,b,c,d);
+                    else g.drawOval(a,b, Math.max(c,d), Math.max(c,d));
                     break;
 
                 case 3:

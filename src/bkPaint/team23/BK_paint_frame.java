@@ -586,13 +586,22 @@ public class BK_paint_frame extends JFrame {
         });
         controlPanel.add(btnVid);
         btnVid.setMargin(new Insets(-1, -1,-1,-1));
-
+//-----------------------------------------------------------------------------
+        JPanel pnlCheckbox = new JPanel();
+        pnlCheckbox.setLayout(new GridLayout(2,1));
         JCheckBox chkVid = new JCheckBox("Record");         // RECORD check box -----------------------------
         chkVid.setMnemonic(KeyEvent.VK_V);
         chkVid.addItemListener(e -> drawing.isRecord =           // bắt sự kiện cho checkbox
                 e.getStateChange() == ItemEvent.SELECTED);
         controlPanel.add(new JLabel(" "));
-        controlPanel.add(chkVid);
+        controlPanel.add(pnlCheckbox);
+        pnlCheckbox.add(chkVid);
+
+        JCheckBox chkShift = new JCheckBox("Shift");         // Shift check box -----------------------------
+        chkShift.setMnemonic(KeyEvent.VK_Q);
+        chkShift.addItemListener(e -> drawingShape.isShift =           // bắt sự kiện cho checkbox
+                e.getStateChange() == ItemEvent.SELECTED);
+        pnlCheckbox.add(chkShift);
         controlPanel.add(new JLabel(" "));
 
                                                                  // EDIT COLOR button ---------------------------
@@ -694,6 +703,13 @@ public class BK_paint_frame extends JFrame {
                 }
             }
         });
+//        frame.addKeyListener(new KeyAdapter() {
+//            @Override
+//            public void keyPressed(KeyEvent e) {
+//                if(e.getKeyCode() == KeyEvent.VK_SHIFT)
+//                drawingShape.isShift = !drawingShape.isShift;
+//            }
+//        });
 
         frame.setJMenuBar(CreateMenu());
         int h = Toolkit.getDefaultToolkit().getScreenSize().height;
