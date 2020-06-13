@@ -337,22 +337,22 @@ public class TextTool extends Component {
 
     public static void setStyleCheckBoxes(int textStyle) {
         switch (textStyle) {
-            case 0 -> {
+            case 0:
                 boldCheckBox.setSelected(false);
                 italicCheckBox.setSelected(false);
-            }
-            case 1 -> {
+                break;
+            case 1:
                 boldCheckBox.setSelected(true);
                 italicCheckBox.setSelected(false);
-            }
-            case 2 -> {
+                break;
+            case 2:
                 boldCheckBox.setSelected(false);
                 italicCheckBox.setSelected(true);
-            }
-            case 3 -> {
+                break;
+            case 3:
                 boldCheckBox.setSelected(true);
                 italicCheckBox.setSelected(true);
-            }
+                break;
         }
     }
 
