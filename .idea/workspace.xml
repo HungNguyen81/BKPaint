@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="BKPaint:jar" />
-    </artifacts-to-build>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fceed04-13f1-4dac-a425-b60eceeac0ba" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/BK_paint_frame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawingShape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawingShape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$fontComboBoxRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$fontComboBoxRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool$styleComboBoxRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/TextTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BKPaint/bkPaint/team23/drawing.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/TextTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/TextTool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bkPaint/team23/drawing.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,18 +44,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1d1nuwUE0n5aUimfSb1oxIfVaTA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/SFX Logo/BK Paint 2020" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager">
     <configuration name="BK_paint_frame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -66,42 +89,46 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="441" y="93" key="#com.intellij.ide.util.MemberChooser" timestamp="1591936201445">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1592036659009">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1592036659009" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1592036659009">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1592036659009" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1592036659009">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1592036659009" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1592036659009">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591603681019" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1592036659009" />
+    <state x="440" y="114" key="SettingsEditor" timestamp="1592020309372">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1592020309372" />
+    <state x="333" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1591602331667">
       <screen x="0" y="0" width="1273" height="768" />
     </state>
-    <state x="441" y="93" key="#com.intellij.ide.util.MemberChooser/0.0.1273.768@0.0.1273.768" timestamp="1591936201445" />
-    <state x="366" y="168" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591848964819">
-      <screen x="0" y="0" width="1273" height="768" />
-    </state>
-    <state x="366" y="168" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1273.768@0.0.1273.768" timestamp="1591848964819" />
-    <state x="416" y="125" key="FileChooserDialogImpl" timestamp="1591934316171">
-      <screen x="0" y="0" width="1273" height="768" />
-    </state>
-    <state x="416" y="125" key="FileChooserDialogImpl/0.0.1273.768@0.0.1273.768" timestamp="1591934316171" />
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom" timestamp="1591937703716">
-      <screen x="0" y="0" width="1273" height="768" />
-    </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.bottom/0.0.1273.768@0.0.1273.768" timestamp="1591937703716" />
-    <state width="1230" height="192" key="GridCell.Tab.0.center" timestamp="1591937703716">
-      <screen x="0" y="0" width="1273" height="768" />
-    </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.center/0.0.1273.768@0.0.1273.768" timestamp="1591937703716" />
-    <state width="1230" height="192" key="GridCell.Tab.0.left" timestamp="1591937703716">
-      <screen x="0" y="0" width="1273" height="768" />
-    </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.left/0.0.1273.768@0.0.1273.768" timestamp="1591937703716" />
-    <state width="1230" height="192" key="GridCell.Tab.0.right" timestamp="1591937703716">
-      <screen x="0" y="0" width="1273" height="768" />
-    </state>
-    <state width="1230" height="192" key="GridCell.Tab.0.right/0.0.1273.768@0.0.1273.768" timestamp="1591937703716" />
-    <state x="109" y="0" key="SettingsEditor" timestamp="1591934318017">
-      <screen x="0" y="0" width="1273" height="768" />
-    </state>
-    <state x="109" y="0" key="SettingsEditor/0.0.1273.768@0.0.1273.768" timestamp="1591934318017" />
-    <state x="333" y="208" key="com.intellij.ide.util.TipDialog" timestamp="1591933528749">
-      <screen x="0" y="0" width="1273" height="768" />
-    </state>
-    <state x="333" y="208" key="com.intellij.ide.util.TipDialog/0.0.1273.768@0.0.1273.768" timestamp="1591933528749" />
+    <state x="333" y="208" key="com.intellij.ide.util.TipDialog/0.0.1273.768@0.0.1273.768" timestamp="1591602331667" />
   </component>
 </project>
