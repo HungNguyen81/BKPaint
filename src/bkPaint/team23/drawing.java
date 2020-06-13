@@ -193,6 +193,22 @@ public class drawing extends JComponent {
 //                    }
 
                 }
+                if(isText){
+                    buffImg = copyImage(bfImg[index-1]);
+                    buffImg2 = copyImage(bfImg[index-1]);
+
+                    image = buffImg;
+                    graphic2d = (Graphics2D) image.getGraphics();
+                    if (!isColorChooser) color = Color.getColor("myColor");
+                    graphic2d.setPaint(color);
+                    Open(resizeImage.scale(buffImg, fwidth, fheight, BK_paint_frame.scale));
+                    repaint();
+                    graphic2d.setPaint((isColorChooser)? color: Color.getColor("myColor"));
+                    BasicStroke stroke = new BasicStroke(penSize, BasicStroke.CAP_ROUND, BasicStroke.JOIN_MITER);
+                    graphic2d.setStroke(stroke);
+                    TextTool.insertText(graphic2d, e.getX(), e.getY());
+                    if (isRecord) CapFrame();
+                }
             }
         });
         addMouseListener(new MouseAdapter() {
