@@ -11,6 +11,11 @@ import java.io.IOException;
 import java.io.File;
 import java.util.Objects;
 
+/**
+ * @author Team 23
+ *
+ */
+
 public class drawing extends JComponent {
     public static Image image;
     public static BufferedImage buffImg;

@@ -5,6 +5,11 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
+/**
+ * @author Hưng
+ *
+ */
+
 public class FillTool {
     public static boolean Fill(BufferedImage image, int x, int y, Color color) {
         ArrayList<Point> pointList = new ArrayList<>();

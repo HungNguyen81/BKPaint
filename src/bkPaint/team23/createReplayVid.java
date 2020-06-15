@@ -9,6 +9,11 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * @author Hưng
+ *
+ */
+
 public class createReplayVid{
     static int count;
     Image img;
@@ -121,6 +126,7 @@ public class createReplayVid{
 
             slider2.addChangeListener(e -> {
                 count =  ((JSlider) e.getSource()).getValue();
+                setImageLabel(dir);
             });
 
             btnPause.addActionListener(e -> {                       // button event: pause/play
@@ -168,16 +174,19 @@ public class createReplayVid{
             }
             if(count <= numF && isPlaying && !intro){              // display replay video
                 slider2.setValue(count);
-                f = new File(dir +"/frame/BKpaint" + count + ".png");
-                try {
-                    img = ImageIO.read(f);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                image = Toolkit.getDefaultToolkit().createImage(img.getSource());
-                Lb.setIcon(new ImageIcon(image));
+                setImageLabel(dir);
                 ++count;
             }
         }
+    }
+    void setImageLabel(String dir){
+        f = new File(dir +"/frame/BKpaint" + count + ".png");
+        try {
+            img = ImageIO.read(f);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        image = Toolkit.getDefaultToolkit().createImage(img.getSource());
+        Lb.setIcon(new ImageIcon(image));
     }
 }

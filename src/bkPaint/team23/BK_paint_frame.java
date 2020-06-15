@@ -7,6 +7,11 @@ import java.awt.event.*;
 import java.io.File;
 import java.io.IOException;
 
+/**
+ * @author Team 23
+ *
+ */
+
 public class BK_paint_frame extends JFrame {
     private JButton btnBlack;
     private JButton btnGreen;
@@ -24,6 +29,7 @@ public class BK_paint_frame extends JFrame {
     private JButton btnMaroon;
     private JButton btnPurple;
     private JButton btnBrown;
+    private JButton btnWhite;
 
     private JButton btnClear;
     private JButton btnEraser;
@@ -106,6 +112,9 @@ public class BK_paint_frame extends JFrame {
                     } else if (e.getSource() == btnLime) {
                         drawing.ChosenColor = "0x00FF00";
                         drawArea.Draw();
+                    } else if(e.getSource() == btnWhite){
+                        drawing.ChosenColor = "0xFFFFFF";
+                        drawArea.Draw();
                     }
                 }
             };
@@ -185,6 +194,10 @@ public class BK_paint_frame extends JFrame {
         btnBrown.addActionListener(actionListener);
         System.setProperty("brown", "0x663300");
         btnBrown.setBackground(Color.getColor("brown"));
+
+        btnWhite = new JButton(" ");
+        btnWhite.addActionListener(actionListener);
+        btnWhite.setBackground(Color.WHITE);
 
         btnClear = new JButton("CLEAR");
         btnEraser = new JButton();
@@ -661,22 +674,23 @@ public class BK_paint_frame extends JFrame {
         colorPanel.add(new JLabel(" COLOR: "));
         colorPanel.add(curColor);
         colorPanel.add(ratio);
-        colorPanel.add(btnBlack); //1
-        colorPanel.add(btnBlue);
-        colorPanel.add(btnCyan);
-        colorPanel.add(btnDarkGray);
+        colorPanel.add(btnWhite);
         colorPanel.add(btnGray);
-        colorPanel.add(btnGreen);
+        colorPanel.add(btnDarkGray);
+        colorPanel.add(btnBlack);
+        colorPanel.add(btnBrown);
+        colorPanel.add(btnOlive);
+        colorPanel.add(btnCyan);
+        colorPanel.add(btnBlue);
         colorPanel.add(btnMagenta);
-        colorPanel.add(btnOrange);
+        colorPanel.add(btnPurple);
+        colorPanel.add(btnMaroon);
         colorPanel.add(btnRed);
+        colorPanel.add(btnOrange);
         colorPanel.add(btnYellow);
         colorPanel.add(btnLime);
-        colorPanel.add(btnBrown);
-        colorPanel.add(btnMaroon);
         colorPanel.add(btnTeal);
-        colorPanel.add(btnPurple);
-        colorPanel.add(btnOlive); //16
+        colorPanel.add(btnGreen);
 
                                                                 // TẠO VIDEO REPLAY ------------------
         Icon iconVideo = new ImageIcon(getClass().getResource("image/vid.png"));
