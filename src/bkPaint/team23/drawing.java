@@ -9,6 +9,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
 import java.io.IOException;
 import java.io.File;
+import java.util.Objects;
 
 public class drawing extends JComponent {
     public static Image image;
@@ -372,25 +373,20 @@ public class drawing extends JComponent {
     public static void delete(File file) {
 
         if (file.isDirectory()) {
-            // directory is empty, then delete it
-            if (file.list().length == 0) {
+            if (Objects.requireNonNull(file.list()).length == 0) {
                 file.delete();
             } else {
-                // list all the directory contents
                 String[] files = file.list();
+                assert files != null;
                 for (String temp : files) {
-                    // construct the file structure
                     File fileDelete = new File(file, temp);
-                    // recursive delete
                     delete(fileDelete);
                 }
-                // check the directory again, if empty then delete it
-                if (file.list().length == 0) {
+                if (Objects.requireNonNull(file.list()).length == 0) {
                     file.delete();
                 }
             }
         } else {
-            // if file, then delete it
             file.delete();
         }
     }
