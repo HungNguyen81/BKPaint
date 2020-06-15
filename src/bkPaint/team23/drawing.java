@@ -366,7 +366,7 @@ public class drawing extends JComponent {
         isColorChooser = true;
         graphic2d.setPaint(c);
         color = Color.getColor("JColorChooser",c);
-        BK_paint_frame.curColor.setBackground(color);
+        if(color != null) BK_paint_frame.curColor.setBackground(color);
         repaint();
     }
     public static void delete(File file) {

@@ -45,6 +45,7 @@ public class BK_paint_frame extends JFrame {
     private JComboBox<String> jcSize;
     private JComboBox<String> jcBrush;
     private JLabel ratio;
+    private JCheckBox chkShift;
 
     static drawing drawArea;
     public static long scale;
@@ -272,6 +273,16 @@ public class BK_paint_frame extends JFrame {
             drawArea.Open(drawing.buffImg2);
             scale = 0;
         });
+        btnOpen.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnOpen.setBackground(Color.YELLOW);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnOpen.setBackground(null);
+            }
+        });
         btnOpen.setMnemonic(KeyEvent.VK_O);
         panel1.add(btnOpen);
         btnOpen.setMargin(new Insets(-1, -1,-1,-1));
@@ -286,6 +297,16 @@ public class BK_paint_frame extends JFrame {
             btnEraser.setBackground(null);
             OpenAndSaveImage save = new OpenAndSaveImage();
             isSaved = save.SaveImg(drawing.image);
+        });
+        btnSave.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnSave.setBackground(Color.ORANGE);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnSave.setBackground(null);
+            }
         });
         btnSave.setMnemonic(KeyEvent.VK_S);
         panel1.add(btnSave);
@@ -302,6 +323,16 @@ public class BK_paint_frame extends JFrame {
         btnUndo.setMargin(new Insets(-1, -1,-1,-1));
         Icon iconUndo = new ImageIcon(getClass().getResource("image/undo.png"));
         btnUndo.setIcon(iconUndo);
+        btnUndo.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnUndo.setBackground(Color.cyan);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnUndo.setBackground(null);
+            }
+        });
 
                                                             // REDO button ---------------------------------
         btnRedo.addActionListener(e -> drawArea.Undo(false));
@@ -310,6 +341,16 @@ public class BK_paint_frame extends JFrame {
         btnRedo.setMargin(new Insets(-1, -1,-1,-1));
         Icon iconRedo = new ImageIcon(getClass().getResource("image/redo.png"));
         btnRedo.setIcon(iconRedo);
+        btnRedo.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnRedo.setBackground(Color.cyan);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnRedo.setBackground(null);
+            }
+        });
 
         controlPanel.add(new JLabel(" "));
 
@@ -394,9 +435,12 @@ public class BK_paint_frame extends JFrame {
                 drawing.isShape = drawingShape.CheckState();
                 drawingShape.typeOfShape = drawingShape.RECT;
 
-                ChangebtnRectState();
-                ChangebtnOvalState();
-                ChangebtnLineState();
+                ChangebtnRectState(drawingShape.isRect);
+                ChangebtnOvalState(drawingShape.isOval);
+                ChangebtnLineState(drawingShape.isLine);
+                if(!drawingShape.CheckState()){
+                    chkShift.setVisible(false);
+                }else chkShift.setVisible(true);
 
             } else if (e.getSource() == btnOval){
                 drawing.isText = false;
@@ -408,9 +452,12 @@ public class BK_paint_frame extends JFrame {
                 drawing.isShape = drawingShape.CheckState();
                 drawingShape.typeOfShape = drawingShape.OVAL;
 
-                ChangebtnRectState();
-                ChangebtnOvalState();
-                ChangebtnLineState();
+                ChangebtnRectState(drawingShape.isRect);
+                ChangebtnOvalState(drawingShape.isOval);
+                ChangebtnLineState(drawingShape.isLine);
+                if(!drawingShape.CheckState()){
+                    chkShift.setVisible(false);
+                }else chkShift.setVisible(true);
 
             } else if (e.getSource() == btnLine){
                 drawing.isText = false;
@@ -422,12 +469,45 @@ public class BK_paint_frame extends JFrame {
                 drawing.isShape = drawingShape.CheckState();
                 drawingShape.typeOfShape = drawingShape.LINE;
 
-                ChangebtnRectState();
-                ChangebtnOvalState();
-                ChangebtnLineState();
-
+                ChangebtnRectState(drawingShape.isRect);
+                ChangebtnOvalState(drawingShape.isOval);
+                ChangebtnLineState(drawingShape.isLine);
+                if(!drawingShape.CheckState()){
+                    chkShift.setVisible(false);
+                }else chkShift.setVisible(true);
             }
         };
+
+        btnRect.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                ChangebtnRectState(!drawingShape.isRect);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                ChangebtnRectState(drawingShape.isRect);
+            }
+        });
+        btnOval.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                ChangebtnOvalState(!drawingShape.isOval);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                ChangebtnOvalState(drawingShape.isOval);
+            }
+        });
+        btnLine.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                ChangebtnLineState(!drawingShape.isLine);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                ChangebtnLineState(drawingShape.isLine);
+            }
+        });
         btnRect.addActionListener(shapeAction);
         btnOval.addActionListener(shapeAction);
         btnLine.addActionListener(shapeAction);
@@ -500,6 +580,16 @@ public class BK_paint_frame extends JFrame {
                 btnText.setBackground(null);
             }
         });
+        btnText.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnText.setBackground(Color.red);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnText.setBackground(null);
+            }
+        });
         controlPanel.add(btnText);
         btnText.setMargin(new Insets(-1, -1,-1,-1));
         Icon iconText = new ImageIcon(getClass().getResource("image/text.png"));
@@ -520,6 +610,16 @@ public class BK_paint_frame extends JFrame {
                 drawing.isText = false;
                 btnText.setBackground(null);
                 btnFill.setBackground(Color.YELLOW);
+            }
+        });
+        btnFill.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnFill.setBackground(Color.YELLOW);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnFill.setBackground(null);
             }
         });
         controlPanel.add(btnFill);
@@ -544,6 +644,16 @@ public class BK_paint_frame extends JFrame {
             drawing.isText = false;
             btnText.setBackground(null);
             drawArea.Eraser();
+        });
+        btnEraser.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnEraser.setBackground(Color.ORANGE);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnEraser.setBackground(null);
+            }
         });
 
         ratio = new JLabel(" ZOOM: 100.0%    ");
@@ -584,10 +694,21 @@ public class BK_paint_frame extends JFrame {
                 JOptionPane.showMessageDialog(null,"Error");
             }
         });
+        btnVid.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnVid.setBackground(Color.YELLOW);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnVid.setBackground(null);
+            }
+        });
         controlPanel.add(btnVid);
         btnVid.setMargin(new Insets(-1, -1,-1,-1));
 //-----------------------------------------------------------------------------
         JPanel pnlCheckbox = new JPanel();
+        pnlCheckbox.setBackground(Color.lightGray);
         pnlCheckbox.setLayout(new GridLayout(2,1));
         JCheckBox chkVid = new JCheckBox("Record");         // RECORD check box -----------------------------
         chkVid.setMnemonic(KeyEvent.VK_V);
@@ -597,18 +718,33 @@ public class BK_paint_frame extends JFrame {
         controlPanel.add(pnlCheckbox);
         pnlCheckbox.add(chkVid);
 
-        JCheckBox chkShift = new JCheckBox("Shift");         // Shift check box -----------------------------
+        chkShift = new JCheckBox("Shift");         // Shift check box -----------------------------
         chkShift.setMnemonic(KeyEvent.VK_Q);
+        chkShift.setEnabled(true);
         chkShift.addItemListener(e -> drawingShape.isShift =           // bắt sự kiện cho checkbox
                 e.getStateChange() == ItemEvent.SELECTED);
         pnlCheckbox.add(chkShift);
         controlPanel.add(new JLabel(" "));
+
+        chkVid.setBackground(Color.lightGray);
+        chkShift.setBackground(Color.lightGray);
+        chkShift.setVisible(false);
 
                                                                  // EDIT COLOR button ---------------------------
         btnEditColor.addActionListener(e -> {
             drawArea.ColorChooser(ColorChooser.EditColor());
             drawing.isEraser = false;
             btnEraser.setBackground(null);
+        });
+        btnEditColor.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnEditColor.setBackground(Color.YELLOW);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnEditColor.setBackground(null);
+            }
         });
         controlPanel.add(btnEditColor);
         btnEditColor.setMargin(new Insets(-1, -1,-1,-1));
@@ -631,6 +767,16 @@ public class BK_paint_frame extends JFrame {
                                 "8. Alt + R to redo\n" +
                                 "9. Alt + V to start/end Record video", "HELP",
                                 JOptionPane.INFORMATION_MESSAGE, icon);
+            }
+        });
+        btnHelp.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                btnHelp.setBackground(Color.YELLOW);
+            }
+            @Override
+            public void mouseExited(MouseEvent e) {
+                btnHelp.setBackground(null);
             }
         });
         controlPanel.add(btnHelp);
@@ -804,22 +950,22 @@ public class BK_paint_frame extends JFrame {
             JOptionPane.showMessageDialog(null, "Too small/large !");
         }
     }
-    void ChangebtnRectState(){
-        if(!drawingShape.isRect){
+    void ChangebtnRectState(boolean isRect){
+        if(!isRect){
             btnRect.setIcon(new ImageIcon(getClass().getResource("image/rectangle.png")));
         } else {
             btnRect.setIcon(new ImageIcon(getClass().getResource("image/rectangle1.png")));
         }
     }
-    void ChangebtnOvalState(){
-        if(!drawingShape.isOval){
+    void ChangebtnOvalState(boolean isOval){
+        if(!isOval){
             btnOval.setIcon(new ImageIcon(getClass().getResource("image/oval.png")));
         } else {
             btnOval.setIcon(new ImageIcon(getClass().getResource("image/oval1.png")));
         }
     }
-    void ChangebtnLineState(){
-        if(!drawingShape.isLine){
+    void ChangebtnLineState(boolean isLine){
+        if(!isLine){
             btnLine.setIcon(new ImageIcon(getClass().getResource("image/line.png")));
         } else {
             btnLine.setIcon(new ImageIcon(getClass().getResource("image/line1.png")));
@@ -827,9 +973,10 @@ public class BK_paint_frame extends JFrame {
     }
     void setShapeDisable(){
         drawingShape.setDisable();
-        ChangebtnLineState();
-        ChangebtnOvalState();
-        ChangebtnRectState();
+        ChangebtnLineState(drawingShape.isLine);
+        ChangebtnOvalState(drawingShape.isOval);
+        ChangebtnRectState(drawingShape.isRect);
         drawing.isShape = false;
+        chkShift.setVisible(false);
     }
 }

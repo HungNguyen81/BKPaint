@@ -60,8 +60,14 @@ public class drawingShape extends drawing {
                     g.setPaint((isColorChooser) ? color : Color.getColor("myColor"));
                     BasicStroke stroke3 = new BasicStroke(penSize, BasicStroke.CAP_ROUND, BasicStroke.JOIN_MITER);
                     g.setStroke(stroke3);
-                    g.drawLine(oldPos.x,oldPos.y,curPos.x,curPos.y);
-
+                    if(!isShift) g.drawLine(oldPos.x,oldPos.y,curPos.x,curPos.y);
+                    else{
+                        if(Math.abs(curPos.x - oldPos.x) > Math.abs(curPos.y - oldPos.y)){
+                            g.drawLine(oldPos.x, oldPos.y ,curPos.x, oldPos.y);
+                        } else {
+                            g.drawLine(oldPos.x, oldPos.y , oldPos.x, curPos.y);
+                        }
+                    }
                     break;
             }
         }
