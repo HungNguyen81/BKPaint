@@ -596,11 +596,17 @@ public class BK_paint_frame extends JFrame {
         btnText.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                btnText.setBackground(Color.red);
+                if(!drawing.isText)
+                    btnText.setBackground(Color.red);
+                else
+                    btnText.setBackground(null);
             }
             @Override
             public void mouseExited(MouseEvent e) {
-                btnText.setBackground(null);
+                if(drawing.isText)
+                    btnText.setBackground(Color.red);
+                else
+                    btnText.setBackground(null);
             }
         });
         controlPanel.add(btnText);
@@ -628,11 +634,17 @@ public class BK_paint_frame extends JFrame {
         btnFill.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                btnFill.setBackground(Color.YELLOW);
+                if(!drawing.isFilling)
+                    btnFill.setBackground(Color.yellow);
+                else
+                    btnFill.setBackground(null);
             }
             @Override
             public void mouseExited(MouseEvent e) {
-                btnFill.setBackground(null);
+                if(drawing.isFilling)
+                    btnFill.setBackground(Color.yellow);
+                else
+                    btnFill.setBackground(null);
             }
         });
         controlPanel.add(btnFill);
@@ -661,11 +673,17 @@ public class BK_paint_frame extends JFrame {
         btnEraser.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
-                btnEraser.setBackground(Color.ORANGE);
+                if(!drawing.isEraser)
+                    btnEraser.setBackground(Color.orange);
+                else
+                    btnEraser.setBackground(null);
             }
             @Override
             public void mouseExited(MouseEvent e) {
-                btnEraser.setBackground(null);
+                if(drawing.isEraser)
+                    btnEraser.setBackground(Color.orange);
+                else
+                    btnEraser.setBackground(null);
             }
         });
 
