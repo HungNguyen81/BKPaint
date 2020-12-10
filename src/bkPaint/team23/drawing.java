@@ -308,7 +308,7 @@ public class drawing extends JComponent {
         return b;
     }
 
-    void CapFrame(){    // GHI ĐỐI TƯỢNG ẢNH VÀO FILE .JPG
+    void CapFrame(){    // GHI ĐỐI TƯỢNG ẢNH VÀO FILE .PNG
         if(!createFolder){
            createFolder = new File(sDir +"\\frame").mkdir();
         }
