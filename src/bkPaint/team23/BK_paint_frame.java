@@ -881,19 +881,12 @@ public class BK_paint_frame extends JFrame {
                 }
             }
         });
-//        frame.addKeyListener(new KeyAdapter() {
-//            @Override
-//            public void keyPressed(KeyEvent e) {
-//                if(e.getKeyCode() == KeyEvent.VK_SHIFT)
-//                drawingShape.isShift = !drawingShape.isShift;
-//            }
-//        });
 
         frame.setJMenuBar(CreateMenu());
         int h = Toolkit.getDefaultToolkit().getScreenSize().height;
         int w = Toolkit.getDefaultToolkit().getScreenSize().width;
-        int frWidth = (int) (w * 0.85);
-        int frHeight = (int) (h * 0.95);
+        int frWidth = (int) (w * 0.5);
+        int frHeight = (int) (h * 0.8);
         frame.setBounds((w - frWidth)/2, (h - frHeight)/2 - 10, frWidth, frHeight);
 
         String dir = getClass().getResource("image/cursor.png").toString().substring(5);
